@@ -1,0 +1,34 @@
+# Indigo Software
+
+> Custom ERP & CRM development using PHP & MySQL. Delivering functional live demos built with your data before any commitment.
+
+## Core Services
+
+- [Custom ERP Development](https://indigosoftware.online/#services): Tailored enterprise resource planning solutions designed for specific business workflows.
+- [Custom CRM Development](https://indigosoftware.online/#services): Specialized customer relationship management systems for tracking clients, leads, and operational communications.
+- [Database Systems](https://indigosoftware.online/#stack): Performant backend system architecture built on PHP and MySQL.
+
+## Primary Industries Served
+
+- [NGOs & Non-Profits](https://indigosoftware.online/#industries): Project tracking, donor management, and custom reporting.
+- [Schools & Colleges](https://indigosoftware.online/#industries): Student records, fee management, attendance, and administrative portals.
+- [Restaurants](https://indigosoftware.online/#industries): Order management, inventory tracking, and POS integrations.
+- [Super Markets](https://indigosoftware.online/#industries): High-volume retail checkout systems and stock control.
+
+## Company & Contact Information
+
+- [Contact Page](https://indigosoftware.online/contact): Reach out for project inquiries and live demos.
+- Email: hello@indigosoftware.online
+- Direct Email: waqas.pccp@gmail.com
+- Phone / WhatsApp: +92 340 2324446
+- Location: Pakistan (Serving global clients remotely)
+
+## Key Technical Specifications
+
+- Core Technologies: PHP, MySQL, JavaScript, HTML5, CSS3
+- Deployment Model: Web-based, hosted on client servers or cloud infrastructure
+- Delivery Model: Working prototype/demo delivered prior to contract finalization
+
+## Optional Resources
+
+- [LLMs Full Documentation](https://indigosoftware.online/llms-full.txt): Detailed breakdown of modules, data schema patterns, and service offerings.
