@@ -43,7 +43,7 @@
             "logo": "https://indigosoftware.online/logo.png",
             "image": "https://indigosoftware.online/og-cover.jpg",
             "description": "Custom ERP and CRM software development in PHP and MySQL for NGOs, schools, colleges, restaurants and super marts, plus WordPress and HTML website development.",
-            "email": "waqas.pccp@gmail.com",
+            "email": "hello@indigosoftware.online",
             "telephone": "+92-340-2324446",
             "priceRange": "$$",
             "areaServed": "Worldwide",
@@ -94,7 +94,7 @@
 
     <main id="top">
 
-        <!-- 1. HERO -->
+        <!-- 1. HERO - No extra space at top -->
         <section class="hero" id="hero">
             <div class="hero-bg" aria-hidden="true">
                 <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
@@ -183,74 +183,73 @@
         </section>
 
         <!-- 4. INDUSTRIES (interactive tabs) - MOBILE COMPATIBLE -->
-<section class="section industries" id="industries">
-    <div class="wrap">
-        <div class="section-head">
-            <h2>One system, shaped four different ways</h2>
-            <p>Tap an industry to see what the software actually handles.</p>
-        </div>
-        <div class="tabs" id="industryTabs">
-            <!-- Tab buttons - horizontally scrollable on mobile -->
-            <div class="tab-buttons" role="tablist" style="overflow-x:auto;overflow-y:hidden;white-space:nowrap;display:flex;flex-wrap:nowrap;gap:8px;padding:4px 0 12px;scrollbar-width:thin;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;">
-                <button class="tab-btn is-active" role="tab" aria-selected="true" data-tab="school" style="flex:0 0 auto;">Schools</button>
-                <button class="tab-btn" role="tab" aria-selected="false" data-tab="college" style="flex:0 0 auto;">Colleges</button>
-                <button class="tab-btn" role="tab" aria-selected="false" data-tab="restaurant" style="flex:0 0 auto;">Restaurants</button>
-                <button class="tab-btn" role="tab" aria-selected="false" data-tab="mart" style="flex:0 0 auto;">Super Marts</button>
+        <section class="section industries" id="industries">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>One system, shaped four different ways</h2>
+                    <p>Tap an industry to see what the software actually handles.</p>
+                </div>
+                <div class="tabs" id="industryTabs">
+                    <!-- Tab buttons - horizontally scrollable on mobile -->
+                    <div class="tab-buttons" role="tablist" style="overflow-x:auto;overflow-y:hidden;white-space:nowrap;display:flex;flex-wrap:nowrap;gap:8px;padding:4px 0 12px;scrollbar-width:thin;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;">
+                        <button class="tab-btn is-active" role="tab" aria-selected="true" data-tab="school" style="flex:0 0 auto;">Schools</button>
+                        <button class="tab-btn" role="tab" aria-selected="false" data-tab="college" style="flex:0 0 auto;">Colleges</button>
+                        <button class="tab-btn" role="tab" aria-selected="false" data-tab="restaurant" style="flex:0 0 auto;">Restaurants</button>
+                        <button class="tab-btn" role="tab" aria-selected="false" data-tab="mart" style="flex:0 0 auto;">Super Marts</button>
+                    </div>
+                    <div class="tab-panels">
+                        <!-- School Panel (Active by default) -->
+                        <div class="tab-panel is-active" id="panel-school" role="tabpanel">
+                            <div class="tab-panel-copy">
+                                <h3>School Management</h3>
+                                <p>Admissions, fee vouchers, attendance, exam results and staff payroll in one place, so front-desk staff and management are always looking at the same numbers.</p>
+                                <ul><li>Admissions &amp; enrollment</li><li>Fee vouchers &amp; ledgers</li><li>Attendance &amp; result cards</li><li>Staff payroll</li></ul>
+                            </div>
+                            <figure class="tab-panel-shot">
+                                <img src="school-management-software.webp" alt="School fee and attendance management dashboard" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;border-radius:var(--radius-md);border:1px solid var(--line);">
+                                <figcaption>Sample admissions overview</figcaption>
+                            </figure>
+                        </div>
+                        <!-- College Panel -->
+                        <div class="tab-panel" id="panel-college" role="tabpanel">
+                            <div class="tab-panel-copy">
+                                <h3>College ERP</h3>
+                                <p>Everything a school system needs, scaled up — multiple departments, semester-wise fee structures, faculty scheduling and transcript generation.</p>
+                                <ul><li>Department &amp; semester structure</li><li>Faculty scheduling</li><li>Transcript &amp; GPA records</li><li>Multi-campus support</li></ul>
+                            </div>
+                            <figure class="tab-panel-shot">
+                                <img src="college-management-software.webp" alt="College ERP department and semester overview" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;border-radius:var(--radius-md);border:1px solid var(--line);">
+                                <figcaption>Sample department view</figcaption>
+                            </figure>
+                        </div>
+                        <!-- Restaurant Panel -->
+                        <div class="tab-panel" id="panel-restaurant" role="tabpanel">
+                            <div class="tab-panel-copy">
+                                <h3>Restaurant POS &amp; Management</h3>
+                                <p>Point-of-sale for the counter, kitchen order tickets, table management and stock control, with daily sales reports that close out in minutes.</p>
+                                <ul><li>POS &amp; billing</li><li>Kitchen order tickets</li><li>Table &amp; reservation view</li><li>Stock &amp; wastage tracking</li></ul>
+                            </div>
+                            <figure class="tab-panel-shot">
+                                <img src="restaurant-dashboard.webp" alt="Restaurant point-of-sale and daily sales dashboard" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;border-radius:var(--radius-md);border:1px solid var(--line);">
+                                <figcaption>Sample POS overview</figcaption>
+                            </figure>
+                        </div>
+                        <!-- Super Mart Panel -->
+                        <div class="tab-panel" id="panel-mart" role="tabpanel">
+                            <div class="tab-panel-copy">
+                                <h3>Super Mart Software</h3>
+                                <p>Barcode-driven billing, multi-branch inventory, supplier ledgers and low-stock alerts, built for the pace of a busy checkout counter.</p>
+                                <ul><li>Barcode billing</li><li>Multi-branch inventory</li><li>Supplier ledgers</li><li>Low-stock alerts</li></ul>
+                            </div>
+                            <figure class="tab-panel-shot">
+                                <img src="supermart-software.webp" alt="Super mart multi-branch inventory dashboard" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;border-radius:var(--radius-md);border:1px solid var(--line);">
+                                <figcaption>Sample inventory overview</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="tab-panels">
-                <!-- School Panel (Active by default) -->
-                <div class="tab-panel is-active" id="panel-school" role="tabpanel">
-                    <div class="tab-panel-copy">
-                        <h3>School Management</h3>
-                        <p>Admissions, fee vouchers, attendance, exam results and staff payroll in one place, so front-desk staff and management are always looking at the same numbers.</p>
-                        <ul><li>Admissions &amp; enrollment</li><li>Fee vouchers &amp; ledgers</li><li>Attendance &amp; result cards</li><li>Staff payroll</li></ul>
-                    </div>
-                    <figure class="tab-panel-shot">
-                        <img src="school-management-software.webp" alt="School fee and attendance management dashboard" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;border-radius:var(--radius-md);border:1px solid var(--line);">
-                        <figcaption>Sample admissions overview</figcaption>
-                    </figure>
-                </div>
-                <!-- College Panel -->
-                <div class="tab-panel" id="panel-college" role="tabpanel">
-                    <div class="tab-panel-copy">
-                        <h3>College ERP</h3>
-                        <p>Everything a school system needs, scaled up — multiple departments, semester-wise fee structures, faculty scheduling and transcript generation.</p>
-                        <ul><li>Department &amp; semester structure</li><li>Faculty scheduling</li><li>Transcript &amp; GPA records</li><li>Multi-campus support</li></ul>
-                    </div>
-                    <figure class="tab-panel-shot">
-                        <img src="college-management-software.webp" alt="College ERP department and semester overview" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;border-radius:var(--radius-md);border:1px solid var(--line);">
-                        <figcaption>Sample department view</figcaption>
-                    </figure>
-                </div>
-                <!-- Restaurant Panel -->
-                <div class="tab-panel" id="panel-restaurant" role="tabpanel">
-                    <div class="tab-panel-copy">
-                        <h3>Restaurant POS &amp; Management</h3>
-                        <p>Point-of-sale for the counter, kitchen order tickets, table management and stock control, with daily sales reports that close out in minutes.</p>
-                        <ul><li>POS &amp; billing</li><li>Kitchen order tickets</li><li>Table &amp; reservation view</li><li>Stock &amp; wastage tracking</li></ul>
-                    </div>
-                    <figure class="tab-panel-shot">
-                        <img src="restaurant-dashboard.webp" alt="Restaurant point-of-sale and daily sales dashboard" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;border-radius:var(--radius-md);border:1px solid var(--line);">
-                        <figcaption>Sample POS overview</figcaption>
-                    </figure>
-                </div>
-                <!-- Super Mart Panel -->
-                <div class="tab-panel" id="panel-mart" role="tabpanel">
-                    <div class="tab-panel-copy">
-                        <h3>Super Mart Software</h3>
-                        <p>Barcode-driven billing, multi-branch inventory, supplier ledgers and low-stock alerts, built for the pace of a busy checkout counter.</p>
-                        <ul><li>Barcode billing</li><li>Multi-branch inventory</li><li>Supplier ledgers</li><li>Low-stock alerts</li></ul>
-                    </div>
-                    <figure class="tab-panel-shot">
-                        <img src="supermart-software.webp" alt="Super mart multi-branch inventory dashboard" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;border-radius:var(--radius-md);border:1px solid var(--line);">
-                        <figcaption>Sample inventory overview</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
+        </section>
 
         <!-- 5. WHY / DEMO PROMISE -->
         <section class="section demo-promise" id="demo">
@@ -285,50 +284,50 @@
             </div>
         </section>
 
-        <!-- 7. WORK / PROJECT GALLERY (FIXED) -->
-<section class="section work" id="work">
-    <div class="wrap">
-        <div class="section-head">
-            <h2>Not our first system</h2>
-            <p>We've built ERP and CRM software across NGOs, schools, colleges, restaurants and super marts, plus a long list of WordPress and HTML web applications on the side. Every build starts the same way — with a demo you can click through.</p>
-        </div>
-        <div class="gallery">
-            <figure class="gallery-item">
-                <div class="gallery-shot" style="border-radius:16px;overflow:hidden;border:2px solid var(--line);">
-                    <img src="erp-dashboard.webp" alt="ERP Dashboard - Modules, staff roles &amp; reports" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;">
+        <!-- 7. WORK / PROJECT GALLERY -->
+        <section class="section work" id="work">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Not our first system</h2>
+                    <p>We've built ERP and CRM software across NGOs, schools, colleges, restaurants and super marts, plus a long list of WordPress and HTML web applications on the side. Every build starts the same way — with a demo you can click through.</p>
                 </div>
-                <figcaption><h3>ERP Dashboard</h3><p>Modules, staff roles &amp; reports</p></figcaption>
-            </figure>
-            <figure class="gallery-item">
-                <div class="gallery-shot" style="border-radius:16px;overflow:hidden;border:2px solid var(--line);">
-                    <img src="crm-pipeline-dashboard.webp" alt="CRM Pipeline - Leads, follow-ups &amp; donors" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;">
+                <div class="gallery">
+                    <figure class="gallery-item">
+                        <div class="gallery-shot" style="border-radius:16px;overflow:hidden;border:2px solid var(--line);">
+                            <img src="erp-dashboard.webp" alt="ERP Dashboard - Modules, staff roles &amp; reports" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;">
+                        </div>
+                        <figcaption><h3>ERP Dashboard</h3><p>Modules, staff roles &amp; reports</p></figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <div class="gallery-shot" style="border-radius:16px;overflow:hidden;border:2px solid var(--line);">
+                            <img src="crm-pipeline-dashboard.webp" alt="CRM Pipeline - Leads, follow-ups &amp; donors" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;">
+                        </div>
+                        <figcaption><h3>CRM Pipeline</h3><p>Leads, follow-ups &amp; donors</p></figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <div class="gallery-shot" style="border-radius:16px;overflow:hidden;border:2px solid var(--line);">
+                            <img src="pos.webp" alt="POS Billing - Counter checkout &amp; tickets" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;">
+                        </div>
+                        <figcaption><h3>POS Billing</h3><p>Counter checkout &amp; tickets</p></figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <div class="gallery-shot" style="border-radius:16px;overflow:hidden;border:2px solid var(--line);">
+                            <img src="website-development.webp" alt="Website Build - WordPress &amp; HTML delivery" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;">
+                        </div>
+                        <figcaption><h3>Website Build</h3><p>WordPress &amp; HTML delivery</p></figcaption>
+                    </figure>
                 </div>
-                <figcaption><h3>CRM Pipeline</h3><p>Leads, follow-ups &amp; donors</p></figcaption>
-            </figure>
-            <figure class="gallery-item">
-                <div class="gallery-shot" style="border-radius:16px;overflow:hidden;border:2px solid var(--line);">
-                    <img src="pos.webp" alt="POS Billing - Counter checkout &amp; tickets" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;">
+                <div class="work-badges">
+                    <span>15+ modules per ERP build</span>
+                    <span>Role-based staff access</span>
+                    <span>Custom reporting</span>
+                    <span>Many web apps delivered</span>
                 </div>
-                <figcaption><h3>POS Billing</h3><p>Counter checkout &amp; tickets</p></figcaption>
-            </figure>
-            <figure class="gallery-item">
-                <div class="gallery-shot" style="border-radius:16px;overflow:hidden;border:2px solid var(--line);">
-                    <img src="website-development.webp" alt="Website Build - WordPress &amp; HTML delivery" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;">
+                <div style="text-align:center;margin-top:48px;">
+                    <a href="projects.html" class="btn btn-primary" style="background:var(--indigo);color:#fff;box-shadow:0 6px 18px rgba(55,48,169,0.30);">View all projects →</a>
                 </div>
-                <figcaption><h3>Website Build</h3><p>WordPress &amp; HTML delivery</p></figcaption>
-            </figure>
-        </div>
-        <div class="work-badges">
-            <span>15+ modules per ERP build</span>
-            <span>Role-based staff access</span>
-            <span>Custom reporting</span>
-            <span>Many web apps delivered</span>
-        </div>
-        <div style="text-align:center;margin-top:48px;">
-            <a href="projects.html" class="btn btn-primary" style="background:var(--indigo);color:#fff;box-shadow:0 6px 18px rgba(55,48,169,0.30);">View all projects →</a>
-        </div>
-    </div>
-</section>
+            </div>
+        </section>
 
         <!-- 8. FAQ -->
         <section class="section faq" id="faq">
@@ -385,7 +384,7 @@
                         <li>Roughly how many staff will use the system</li>
                         <li>What you're currently using — paper, Excel, or another system</li>
                     </ul>
-                    <a href="hello@indigosoftware.online" class="btn btn-primary btn-block">Email us to start</a>
+                    <a href="mailto:hello@indigosoftware.online" class="btn btn-primary btn-block">Email us to start</a>
                 </div>
             </div>
         </section>
