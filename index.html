@@ -1,398 +1,563 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Indigo Software — Custom ERP & CRM Development for Schools, NGOs, Restaurants & Super Marts</title>
-<meta name="description" content="Indigo Software builds custom ERP and CRM systems in PHP & MySQL for NGOs, schools, colleges, restaurants and super marts, plus WordPress and HTML websites. Free live demo available.">
-<meta name="keywords" content="custom software development, ERP software, CRM software, school management system, college ERP, NGO software, restaurant POS, super mart software, PHP MySQL development, WordPress website development, Indigo Software">
-<meta name="author" content="Indigo Software">
-<link rel="canonical" href="https://indigosoftware.online/">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indigo Software — Custom ERP & CRM Development for Schools, NGOs, Restaurants & Super Marts</title>
+    <meta name="description" content="Indigo Software builds custom ERP and CRM systems in PHP & MySQL for NGOs, schools, colleges, restaurants and super marts, plus WordPress and HTML websites. Free live demo available." />
+    <meta name="keywords" content="custom software development, ERP software, CRM software, school management system, college ERP, NGO software, restaurant POS, super mart software, PHP MySQL development, WordPress website development, Indigo Software" />
+    <meta name="author" content="Indigo Software" />
+    <link rel="canonical" href="https://indigosoftware.online/" />
 
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Indigo Software">
-<meta property="og:title" content="Indigo Software — Custom ERP & CRM Development">
-<meta property="og:description" content="Custom ERP & CRM systems in PHP & MySQL for NGOs, schools, colleges, restaurants and super marts. Plus WordPress & HTML website development. Free demo available.">
-<meta property="og:url" content="https://indigosoftware.online/">
-<meta property="og:image" content="https://indigosoftware.online/og-cover.jpg">
-<meta property="og:locale" content="en_US">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Indigo Software" />
+    <meta property="og:title" content="Indigo Software — Custom ERP & CRM Development" />
+    <meta property="og:description" content="Custom ERP & CRM systems in PHP & MySQL for NGOs, schools, colleges, restaurants and super marts. Plus WordPress & HTML website development. Free demo available." />
+    <meta property="og:url" content="https://indigosoftware.online/" />
+    <meta property="og:image" content="https://indigosoftware.online/og-cover.jpg" />
+    <meta property="og:locale" content="en_US" />
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Indigo Software — Custom ERP & CRM Development">
-<meta name="twitter:description" content="Custom ERP & CRM systems for NGOs, schools, colleges, restaurants and super marts. Free demo available.">
-<meta name="twitter:image" content="https://indigosoftware.online/og-cover.jpg">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Indigo Software — Custom ERP & CRM Development" />
+    <meta name="twitter:description" content="Custom ERP & CRM systems for NGOs, schools, colleges, restaurants and super marts. Free demo available." />
+    <meta name="twitter:image" content="https://indigosoftware.online/og-cover.jpg" />
 
-<meta name="theme-color" content="#3730A9">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%233730A9'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Georgia,serif' fill='%23FFB648' text-anchor='middle'%3EI%3C/text%3E%3C/svg%3E">
+    <meta name="theme-color" content="#3730A9" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%233730A9'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Georgia,serif' fill='%23FFB648' text-anchor='middle'%3EI%3C/text%3E%3C/svg%3E" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 
-<!-- Schema.org: Organization / ProfessionalService -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Indigo Software",
-  "url": "https://indigosoftware.online/",
-  "logo": "https://indigosoftware.online/logo.png",
-  "image": "https://indigosoftware.online/og-cover.jpg",
-  "description": "Custom ERP and CRM software development in PHP and MySQL for NGOs, schools, colleges, restaurants and super marts, plus WordPress and HTML website development.",
-  "email": "waqas.pccp@gmail.com",
-  "telephone": "+92-340-2324446",
-  "priceRange": "$$",
-  "areaServed": "Worldwide",
-  "knowsAbout": ["ERP Software", "CRM Software", "PHP Development", "MySQL", "WordPress Development", "School Management Systems", "NGO Management Software", "Restaurant POS Systems"],
-  "makesOffer": [
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom ERP Development" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom CRM Development" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "WordPress & HTML Website Development" } }
-  ]
-}
-</script>
+    <!-- Schema.org: Organization / ProfessionalService -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "Indigo Software",
+            "url": "https://indigosoftware.online/",
+            "logo": "https://indigosoftware.online/logo.png",
+            "image": "https://indigosoftware.online/og-cover.jpg",
+            "description": "Custom ERP and CRM software development in PHP and MySQL for NGOs, schools, colleges, restaurants and super marts, plus WordPress and HTML website development.",
+            "email": "waqas.pccp@gmail.com",
+            "telephone": "+92-340-2324446",
+            "priceRange": "$$",
+            "areaServed": "Worldwide",
+            "knowsAbout": ["ERP Software", "CRM Software", "PHP Development", "MySQL", "WordPress Development", "School Management Systems", "NGO Management Software", "Restaurant POS Systems"],
+            "makesOffer": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom ERP Development" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom CRM Development" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "WordPress & HTML Website Development" } }
+            ]
+        }
+    </script>
 
-<!-- Schema.org: FAQPage -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Can I see a live demo before I commit?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every project starts with a working demo built on your own data, so you can test the system before any final agreement." }
-    },
-    {
-      "@type": "Question",
-      "name": "What technology do you build with?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Our ERP and CRM systems are built in PHP with a MySQL database, giving you full ownership of your code and data with no vendor lock-in." }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you only build software for schools?",
-      "acceptedAnswer": { "@type": "Answer", "text": "No. We build ERP and CRM systems for NGOs, schools, colleges, restaurants and super marts, and each system is tailored to how that organization actually works." }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you also build websites?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes, website development is our secondary specialty. We build in WordPress and plain HTML, and have delivered many web applications across different industries." }
-    }
-  ]
-}
-</script>
+    <!-- Schema.org: FAQPage -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+                    "@type": "Question",
+                    "name": "Can I see a live demo before I commit?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every project starts with a working demo built on your own data, so you can test the system before any final agreement." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What technology do you build with?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "Our ERP and CRM systems are built in PHP with a MySQL database, giving you full ownership of your code and data with no vendor lock-in." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do you only build software for schools?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "No. We build ERP and CRM systems for NGOs, schools, colleges, restaurants and super marts, and each system is tailored to how that organization actually works." }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do you also build websites?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "Yes, website development is our secondary specialty. We build in WordPress and plain HTML, and have delivered many web applications across different industries." }
+                }
+            ]
+        }
+    </script>
 </head>
 <body>
 
-<div class="progress-bar" id="progressBar"></div>
+    <div class="progress-bar" id="progressBar"></div>
 
-<!-- HEADER (injected by components/header.js) -->
-<div id="header-root"></div>
+    <!-- HEADER (injected by components/header.js) -->
+    <div id="header-root"></div>
 
-<main id="top">
+    <main id="top">
 
-  <!-- 1. HERO -->
-  <section class="hero" id="hero">
-    <div class="hero-bg" aria-hidden="true">
-      <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
-        <defs>
-          <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#2B2680"/>
-            <stop offset="55%" stop-color="#3730A9"/>
-            <stop offset="100%" stop-color="#4C3FD6"/>
-          </linearGradient>
-          <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
-            <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-          </pattern>
-        </defs>
-        <rect width="1440" height="900" fill="url(#heroGrad)"/>
-        <rect width="1440" height="900" fill="url(#grid)"/>
-        <g opacity="0.5">
-          <rect x="1060" y="120" width="220" height="150" rx="14" fill="rgba(255,255,255,0.06)"/>
-          <rect x="1180" y="300" width="180" height="120" rx="14" fill="rgba(255,182,72,0.12)"/>
-          <rect x="980" y="420" width="260" height="170" rx="14" fill="rgba(255,255,255,0.05)"/>
-          <circle cx="1300" cy="620" r="90" fill="rgba(255,255,255,0.05)"/>
-        </g>
-      </svg>
-    </div>
-    <div class="wrap hero-inner">
-      <div class="hero-copy">
-        <p class="hero-kicker">ERP · CRM · Web Development</p>
-        <h1 class="hero-title">
-          <span class="reveal-line"><span>Software built around</span></span>
-          <span class="reveal-line"><span>how your organization</span></span>
-          <span class="reveal-line"><span class="italic-accent">actually</span> runs.</span>
-        </h1>
-        <p class="hero-sub">We design and build custom ERP and CRM systems in PHP &amp; MySQL for NGOs, schools, colleges, restaurants and super marts — then hand you a working demo before you decide anything.</p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Request a free demo</a>
-          <a href="#industries" class="btn btn-ghost">See what we build</a>
-        </div>
-        <dl class="hero-stats">
-          <div><dt data-count="15">0</dt><dd>modules per system</dd></div>
-          <div><dt data-count="5">0</dt><dd>industries served</dd></div>
-          <div><dt data-count="100">0</dt><dd>% PHP / MySQL owned code</dd></div>
-        </dl>
-      </div>
-    </div>
-  </section>
-
-  <!-- 2. TRUST / CLIENT TYPES STRIP -->
-  <section class="strip" aria-label="Industries we build for">
-    <div class="wrap strip-inner">
-      <span class="strip-label">Built for</span>
-      <ul class="strip-list">
-        <li>NGOs</li><li>Schools</li><li>Colleges</li><li>Restaurants</li><li>Super Marts</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- 3. SERVICES -->
-  <section class="section services" id="services">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>Two things we do, done properly</h2>
-        <p>Custom business software is the main subject. Websites are the elective we're just as strong in.</p>
-      </div>
-      <div class="services-grid">
-        <article class="service-card service-primary">
-          <span class="service-tag">Primary</span>
-          <h3>Custom ERP &amp; CRM Development</h3>
-          <p>End-to-end systems built in PHP with a MySQL database — student records, donor ledgers, table orders, inventory, staff, and every workflow in between. You own the code and the data, no rented platform in the middle.</p>
-          <ul class="service-points">
-            <li>Built around your existing paperwork and process, not a rigid template</li>
-            <li>Role-based access for admins, staff and management</li>
-            <li>Reports and exports your accountant will actually use</li>
-          </ul>
-        </article>
-        <article class="service-card service-secondary">
-          <span class="service-tag service-tag-alt">Secondary</span>
-          <h3>WordPress &amp; HTML Websites</h3>
-          <p>Marketing sites, admissions pages, restaurant menus, and storefronts — built in WordPress when you need to edit it yourself, or hand-coded HTML when you need it fast and light.</p>
-          <ul class="service-points">
-            <li>Dozens of web applications shipped across different niches</li>
-            <li>SEO-structured from the first commit</li>
-            <li>Fully responsive, fast-loading builds</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- 4. INDUSTRIES (interactive tabs) -->
-  <section class="section industries" id="industries">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>One system, shaped five different ways</h2>
-        <p>Tap an industry to see what the software actually handles.</p>
-      </div>
-      <div class="tabs" id="industryTabs">
-        <div class="tab-buttons" role="tablist">
-          <button class="tab-btn is-active" role="tab" aria-selected="true" data-tab="ngo">NGOs</button>
-          <button class="tab-btn" role="tab" aria-selected="false" data-tab="school">Schools</button>
-          <button class="tab-btn" role="tab" aria-selected="false" data-tab="college">Colleges</button>
-          <button class="tab-btn" role="tab" aria-selected="false" data-tab="restaurant">Restaurants</button>
-          <button class="tab-btn" role="tab" aria-selected="false" data-tab="mart">Super Marts</button>
-        </div>
-        <div class="tab-panels">
-          <div class="tab-panel is-active" id="panel-ngo" role="tabpanel">
-            <div class="tab-panel-copy">
-              <h3>NGO &amp; Charity Management</h3>
-              <p>Track donations and donors, manage project budgets, log field expenditure and generate the reports your funders ask for — all reconciled against a proper chart of accounts.</p>
-              <ul><li>Donation &amp; donor tracking</li><li>Expenditure &amp; approvals</li><li>Beneficiary records</li><li>Funder-ready reports</li></ul>
+        <!-- 1. HERO -->
+        <section class="hero" id="hero">
+            <div class="hero-bg" aria-hidden="true">
+                <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
+                    <defs>
+                        <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#2B2680"/>
+                            <stop offset="55%" stop-color="#3730A9"/>
+                            <stop offset="100%" stop-color="#4C3FD6"/>
+                        </linearGradient>
+                        <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+                            <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                        </pattern>
+                    </defs>
+                    <rect width="1440" height="900" fill="url(#heroGrad)"/>
+                    <rect width="1440" height="900" fill="url(#grid)"/>
+                    <g opacity="0.5">
+                        <rect x="1060" y="120" width="220" height="150" rx="14" fill="rgba(255,255,255,0.06)"/>
+                        <rect x="1180" y="300" width="180" height="120" rx="14" fill="rgba(255,182,72,0.12)"/>
+                        <rect x="980" y="420" width="260" height="170" rx="14" fill="rgba(255,255,255,0.05)"/>
+                        <circle cx="1300" cy="620" r="90" fill="rgba(255,255,255,0.05)"/>
+                    </g>
+                </svg>
             </div>
-            <figure class="tab-panel-shot">
-              <img src="images/industry-ngo.svg" alt="NGO donor and donation-tracking dashboard screen" loading="lazy" width="640" height="420">
-              <figcaption>Sample donor dashboard</figcaption>
-            </figure>
-          </div>
-          <div class="tab-panel" id="panel-school" role="tabpanel">
-            <div class="tab-panel-copy">
-              <h3>School Management</h3>
-              <p>Admissions, fee vouchers, attendance, exam results and staff payroll in one place, so front-desk staff and management are always looking at the same numbers.</p>
-              <ul><li>Admissions &amp; enrollment</li><li>Fee vouchers &amp; ledgers</li><li>Attendance &amp; result cards</li><li>Staff payroll</li></ul>
+            <div class="wrap hero-inner">
+                <div class="hero-copy">
+                    <p class="hero-kicker">ERP · CRM · Web Development</p>
+                    <h1 class="hero-title">
+                        <span class="reveal-line"><span>Software built around</span></span>
+                        <span class="reveal-line"><span>how your organization</span></span>
+                        <span class="reveal-line"><span class="italic-accent">actually</span> runs.</span>
+                    </h1>
+                    <p class="hero-sub">We design and build custom ERP and CRM systems in PHP &amp; MySQL for NGOs, schools, colleges, restaurants and super marts — then hand you a working demo before you decide anything.</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">Request a free demo</a>
+                        <a href="#industries" class="btn btn-ghost">See what we build</a>
+                    </div>
+                    <dl class="hero-stats">
+                        <div><dt data-count="15">0</dt><dd>modules per system</dd></div>
+                        <div><dt data-count="5">0</dt><dd>industries served</dd></div>
+                        <div><dt data-count="100">0</dt><dd>% PHP / MySQL owned code</dd></div>
+                    </dl>
+                </div>
             </div>
-            <figure class="tab-panel-shot">
-              <img src="images/industry-school.svg" alt="School fee and attendance management dashboard screen" loading="lazy" width="640" height="420">
-              <figcaption>Sample admissions overview</figcaption>
-            </figure>
-          </div>
-          <div class="tab-panel" id="panel-college" role="tabpanel">
-            <div class="tab-panel-copy">
-              <h3>College ERP</h3>
-              <p>Everything a school system needs, scaled up — multiple departments, semester-wise fee structures, faculty scheduling and transcript generation.</p>
-              <ul><li>Department &amp; semester structure</li><li>Faculty scheduling</li><li>Transcript &amp; GPA records</li><li>Multi-campus support</li></ul>
+        </section>
+
+        <!-- 2. TRUST / CLIENT TYPES STRIP -->
+        <section class="strip" aria-label="Industries we build for">
+            <div class="wrap strip-inner">
+                <span class="strip-label">Built for</span>
+                <ul class="strip-list">
+                    <li>NGOs</li><li>Schools</li><li>Colleges</li><li>Restaurants</li><li>Super Marts</li>
+                </ul>
             </div>
-            <figure class="tab-panel-shot">
-              <img src="images/industry-college.svg" alt="College ERP department and semester overview screen" loading="lazy" width="640" height="420">
-              <figcaption>Sample department view</figcaption>
-            </figure>
-          </div>
-          <div class="tab-panel" id="panel-restaurant" role="tabpanel">
-            <div class="tab-panel-copy">
-              <h3>Restaurant POS &amp; Management</h3>
-              <p>Point-of-sale for the counter, kitchen order tickets, table management and stock control, with daily sales reports that close out in minutes.</p>
-              <ul><li>POS &amp; billing</li><li>Kitchen order tickets</li><li>Table &amp; reservation view</li><li>Stock &amp; wastage tracking</li></ul>
+        </section>
+
+        <!-- 3. SERVICES -->
+        <section class="section services" id="services">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Two things we do, done properly</h2>
+                    <p>Custom business software is the main subject. Websites are the elective we're just as strong in.</p>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card service-primary">
+                        <span class="service-tag">Primary</span>
+                        <h3>Custom ERP &amp; CRM Development</h3>
+                        <p>End-to-end systems built in PHP with a MySQL database — student records, donor ledgers, table orders, inventory, staff, and every workflow in between. You own the code and the data, no rented platform in the middle.</p>
+                        <ul class="service-points">
+                            <li>Built around your existing paperwork and process, not a rigid template</li>
+                            <li>Role-based access for admins, staff and management</li>
+                            <li>Reports and exports your accountant will actually use</li>
+                        </ul>
+                    </article>
+                    <article class="service-card service-secondary">
+                        <span class="service-tag service-tag-alt">Secondary</span>
+                        <h3>WordPress &amp; HTML Websites</h3>
+                        <p>Marketing sites, admissions pages, restaurant menus, and storefronts — built in WordPress when you need to edit it yourself, or hand-coded HTML when you need it fast and light.</p>
+                        <ul class="service-points">
+                            <li>Dozens of web applications shipped across different niches</li>
+                            <li>SEO-structured from the first commit</li>
+                            <li>Fully responsive, fast-loading builds</li>
+                        </ul>
+                    </article>
+                </div>
             </div>
-            <figure class="tab-panel-shot">
-              <img src="images/industry-restaurant.svg" alt="Restaurant point-of-sale and daily sales dashboard screen" loading="lazy" width="640" height="420">
-              <figcaption>Sample POS overview</figcaption>
-            </figure>
-          </div>
-          <div class="tab-panel" id="panel-mart" role="tabpanel">
-            <div class="tab-panel-copy">
-              <h3>Super Mart Software</h3>
-              <p>Barcode-driven billing, multi-branch inventory, supplier ledgers and low-stock alerts, built for the pace of a busy checkout counter.</p>
-              <ul><li>Barcode billing</li><li>Multi-branch inventory</li><li>Supplier ledgers</li><li>Low-stock alerts</li></ul>
+        </section>
+
+        <!-- 4. INDUSTRIES (interactive tabs) -->
+        <section class="section industries" id="industries">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>One system, shaped five different ways</h2>
+                    <p>Tap an industry to see what the software actually handles.</p>
+                </div>
+                <div class="tabs" id="industryTabs">
+                    <div class="tab-buttons" role="tablist">
+                        <button class="tab-btn is-active" role="tab" aria-selected="true" data-tab="ngo">NGOs</button>
+                        <button class="tab-btn" role="tab" aria-selected="false" data-tab="school">Schools</button>
+                        <button class="tab-btn" role="tab" aria-selected="false" data-tab="college">Colleges</button>
+                        <button class="tab-btn" role="tab" aria-selected="false" data-tab="restaurant">Restaurants</button>
+                        <button class="tab-btn" role="tab" aria-selected="false" data-tab="mart">Super Marts</button>
+                    </div>
+                    <div class="tab-panels">
+                        <div class="tab-panel is-active" id="panel-ngo" role="tabpanel">
+                            <div class="tab-panel-copy">
+                                <h3>NGO &amp; Charity Management</h3>
+                                <p>Track donations and donors, manage project budgets, log field expenditure and generate the reports your funders ask for — all reconciled against a proper chart of accounts.</p>
+                                <ul><li>Donation &amp; donor tracking</li><li>Expenditure &amp; approvals</li><li>Beneficiary records</li><li>Funder-ready reports</li></ul>
+                            </div>
+                            <figure class="tab-panel-shot">
+                                <img src="images/industry-ngo.svg" alt="NGO donor and donation-tracking dashboard screen" loading="lazy" width="640" height="420">
+                                <figcaption>Sample donor dashboard</figcaption>
+                            </figure>
+                        </div>
+                        <div class="tab-panel" id="panel-school" role="tabpanel">
+                            <div class="tab-panel-copy">
+                                <h3>School Management</h3>
+                                <p>Admissions, fee vouchers, attendance, exam results and staff payroll in one place, so front-desk staff and management are always looking at the same numbers.</p>
+                                <ul><li>Admissions &amp; enrollment</li><li>Fee vouchers &amp; ledgers</li><li>Attendance &amp; result cards</li><li>Staff payroll</li></ul>
+                            </div>
+                            <figure class="tab-panel-shot">
+                                <img src="images/industry-school.svg" alt="School fee and attendance management dashboard screen" loading="lazy" width="640" height="420">
+                                <figcaption>Sample admissions overview</figcaption>
+                            </figure>
+                        </div>
+                        <div class="tab-panel" id="panel-college" role="tabpanel">
+                            <div class="tab-panel-copy">
+                                <h3>College ERP</h3>
+                                <p>Everything a school system needs, scaled up — multiple departments, semester-wise fee structures, faculty scheduling and transcript generation.</p>
+                                <ul><li>Department &amp; semester structure</li><li>Faculty scheduling</li><li>Transcript &amp; GPA records</li><li>Multi-campus support</li></ul>
+                            </div>
+                            <figure class="tab-panel-shot">
+                                <img src="images/industry-college.svg" alt="College ERP department and semester overview screen" loading="lazy" width="640" height="420">
+                                <figcaption>Sample department view</figcaption>
+                            </figure>
+                        </div>
+                        <div class="tab-panel" id="panel-restaurant" role="tabpanel">
+                            <div class="tab-panel-copy">
+                                <h3>Restaurant POS &amp; Management</h3>
+                                <p>Point-of-sale for the counter, kitchen order tickets, table management and stock control, with daily sales reports that close out in minutes.</p>
+                                <ul><li>POS &amp; billing</li><li>Kitchen order tickets</li><li>Table &amp; reservation view</li><li>Stock &amp; wastage tracking</li></ul>
+                            </div>
+                            <figure class="tab-panel-shot">
+                                <img src="images/industry-restaurant.svg" alt="Restaurant point-of-sale and daily sales dashboard screen" loading="lazy" width="640" height="420">
+                                <figcaption>Sample POS overview</figcaption>
+                            </figure>
+                        </div>
+                        <div class="tab-panel" id="panel-mart" role="tabpanel">
+                            <div class="tab-panel-copy">
+                                <h3>Super Mart Software</h3>
+                                <p>Barcode-driven billing, multi-branch inventory, supplier ledgers and low-stock alerts, built for the pace of a busy checkout counter.</p>
+                                <ul><li>Barcode billing</li><li>Multi-branch inventory</li><li>Supplier ledgers</li><li>Low-stock alerts</li></ul>
+                            </div>
+                            <figure class="tab-panel-shot">
+                                <img src="images/industry-mart.svg" alt="Super mart multi-branch inventory dashboard screen" loading="lazy" width="640" height="420">
+                                <figcaption>Sample inventory overview</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <figure class="tab-panel-shot">
-              <img src="images/industry-mart.svg" alt="Super mart multi-branch inventory dashboard screen" loading="lazy" width="640" height="420">
-              <figcaption>Sample inventory overview</figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        </section>
 
-  <!-- 5. WHY / DEMO PROMISE -->
-  <section class="section demo-promise" id="demo">
-    <div class="wrap demo-inner">
-      <div class="demo-copy">
-        <h2>Test it before you trust it</h2>
-        <p>Most software decisions get made from a slide deck. We'd rather hand you a working demo — loaded with sample data close to your own records — so your staff can click through it before anyone signs anything.</p>
-        <a href="#contact" class="btn btn-primary">Request your demo</a>
-      </div>
-      <ol class="demo-steps">
-        <li><span class="step-no">1</span><div><h4>Tell us how you work</h4><p>A short call about your current process, registers, and pain points.</p></div></li>
-        <li><span class="step-no">2</span><div><h4>We build a working demo</h4><p>A functioning system with sample data, not a mockup — usually within days.</p></div></li>
-        <li><span class="step-no">3</span><div><h4>Your staff test it</h4><p>You try it on real scenarios and tell us what to adjust.</p></div></li>
-        <li><span class="step-no">4</span><div><h4>We deploy &amp; train</h4><p>Go live on your server, with your team trained on day one.</p></div></li>
-      </ol>
-    </div>
-  </section>
+        <!-- 5. WHY / DEMO PROMISE -->
+        <section class="section demo-promise" id="demo">
+            <div class="wrap demo-inner">
+                <div class="demo-copy">
+                    <h2>Test it before you trust it</h2>
+                    <p>Most software decisions get made from a slide deck. We'd rather hand you a working demo — loaded with sample data close to your own records — so your staff can click through it before anyone signs anything.</p>
+                    <a href="#contact" class="btn btn-primary">Request your demo</a>
+                </div>
+                <ol class="demo-steps">
+                    <li><span class="step-no">1</span><div><h4>Tell us how you work</h4><p>A short call about your current process, registers, and pain points.</p></div></li>
+                    <li><span class="step-no">2</span><div><h4>We build a working demo</h4><p>A functioning system with sample data, not a mockup — usually within days.</p></div></li>
+                    <li><span class="step-no">3</span><div><h4>Your staff test it</h4><p>You try it on real scenarios and tell us what to adjust.</p></div></li>
+                    <li><span class="step-no">4</span><div><h4>We deploy &amp; train</h4><p>Go live on your server, with your team trained on day one.</p></div></li>
+                </ol>
+            </div>
+        </section>
 
-  <!-- 6. TECH STACK -->
-  <section class="section stack" id="stack">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>What it's built on</h2>
-        <p>No proprietary platform holding your data hostage.</p>
-      </div>
-      <div class="stack-grid">
-        <div class="stack-item"><h3>PHP</h3><p>Server-side logic, written to be readable by whoever maintains it after us.</p></div>
-        <div class="stack-item"><h3>MySQL</h3><p>A proper relational database — your records, indexed and backed up, not locked in a spreadsheet.</p></div>
-        <div class="stack-item"><h3>HTML &amp; WordPress</h3><p>For the website side: hand-coded HTML for speed, WordPress when you want to edit it yourself.</p></div>
-        <div class="stack-item"><h3>Your own server</h3><p>Deployed where you choose to host it — shared hosting, VPS, or on-premise.</p></div>
-      </div>
-    </div>
-  </section>
+        <!-- 6. TECH STACK -->
+        <section class="section stack" id="stack">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>What it's built on</h2>
+                    <p>No proprietary platform holding your data hostage.</p>
+                </div>
+                <div class="stack-grid">
+                    <div class="stack-item"><h3>PHP</h3><p>Server-side logic, written to be readable by whoever maintains it after us.</p></div>
+                    <div class="stack-item"><h3>MySQL</h3><p>A proper relational database — your records, indexed and backed up, not locked in a spreadsheet.</p></div>
+                    <div class="stack-item"><h3>HTML &amp; WordPress</h3><p>For the website side: hand-coded HTML for speed, WordPress when you want to edit it yourself.</p></div>
+                    <div class="stack-item"><h3>Your own server</h3><p>Deployed where you choose to host it — shared hosting, VPS, or on-premise.</p></div>
+                </div>
+            </div>
+        </section>
 
-  <!-- 7. WORK / PROJECT GALLERY -->
-  <section class="section work" id="work">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>Not our first system</h2>
-        <p>We've built ERP and CRM software across NGOs, schools, colleges, restaurants and super marts, plus a long list of WordPress and HTML web applications on the side. Every build starts the same way — with a demo you can click through.</p>
-      </div>
-      <div class="gallery">
-        <figure class="gallery-item">
-          <img src="images/project-erp.svg" alt="ERP dashboard screen showing modules and staff roles" loading="lazy" width="640" height="420">
-          <figcaption><h3>ERP Dashboard</h3><p>Modules, staff roles &amp; reports</p></figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="images/project-crm.svg" alt="CRM pipeline screen showing leads and donor follow-ups" loading="lazy" width="640" height="420">
-          <figcaption><h3>CRM Pipeline</h3><p>Leads, follow-ups &amp; donors</p></figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="images/project-pos.svg" alt="Restaurant POS billing screen with order tickets" loading="lazy" width="640" height="420">
-          <figcaption><h3>POS Billing</h3><p>Counter checkout &amp; tickets</p></figcaption>
-        </figure>
-        <figure class="gallery-item">
-          <img src="images/project-website.svg" alt="Website build overview screen for WordPress and HTML delivery" loading="lazy" width="640" height="420">
-          <figcaption><h3>Website Build</h3><p>WordPress &amp; HTML delivery</p></figcaption>
-        </figure>
-      </div>
-      <div class="work-badges">
-        <span>15+ modules per ERP build</span>
-        <span>Role-based staff access</span>
-        <span>Custom reporting</span>
-        <span>Many web apps delivered</span>
-      </div>
-    </div>
-  </section>
+        <!-- 7. WORK / PROJECT GALLERY (FIXED) -->
+        <section class="section work" id="work">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Not our first system</h2>
+                    <p>We've built ERP and CRM software across NGOs, schools, colleges, restaurants and super marts, plus a long list of WordPress and HTML web applications on the side. Every build starts the same way — with a demo you can click through.</p>
+                </div>
+                <div class="gallery">
+                    <figure class="gallery-item">
+                        <div class="gallery-shot" style="background:linear-gradient(145deg,#2B2680,#4C3FD6);">
+                            <svg viewBox="0 0 640 420" preserveAspectRatio="xMidYMid meet" class="gallery-svg">
+                                <rect width="640" height="420" rx="12" fill="#2B2680"/>
+                                <!-- top bar -->
+                                <rect x="0" y="0" width="640" height="44" rx="12" fill="#1E1A5E"/>
+                                <rect x="0" y="28" width="640" height="16" fill="#1E1A5E"/>
+                                <circle cx="28" cy="22" r="6" fill="#FF5F56" opacity="0.7"/>
+                                <circle cx="48" cy="22" r="6" fill="#FFBD2E" opacity="0.7"/>
+                                <circle cx="68" cy="22" r="6" fill="#27C93F" opacity="0.7"/>
+                                <rect x="94" y="16" width="120" height="12" rx="3" fill="rgba(255,255,255,0.12)"/>
+                                <!-- sidebar -->
+                                <rect x="0" y="44" width="140" height="376" fill="#1E1A5E" opacity="0.5"/>
+                                <rect x="20" y="70" width="100" height="10" rx="3" fill="rgba(255,255,255,0.10)"/>
+                                <rect x="20" y="94" width="80" height="10" rx="3" fill="rgba(255,255,255,0.20)"/>
+                                <rect x="20" y="118" width="90" height="10" rx="3" fill="rgba(255,255,255,0.10)"/>
+                                <rect x="20" y="142" width="70" height="10" rx="3" fill="rgba(255,255,255,0.10)"/>
+                                <!-- main content -->
+                                <rect x="160" y="64" width="220" height="100" rx="8" fill="rgba(255,255,255,0.06)"/>
+                                <rect x="180" y="80" width="100" height="8" rx="3" fill="rgba(255,255,255,0.25)"/>
+                                <rect x="180" y="100" width="160" height="6" rx="3" fill="rgba(255,255,255,0.10)"/>
+                                <rect x="180" y="114" width="140" height="6" rx="3" fill="rgba(255,255,255,0.10)"/>
+                                <rect x="180" y="128" width="120" height="6" rx="3" fill="rgba(255,255,255,0.10)"/>
+                                <rect x="400" y="64" width="210" height="100" rx="8" fill="rgba(255,255,255,0.06)"/>
+                                <rect x="420" y="80" width="80" height="8" rx="3" fill="rgba(255,255,255,0.25)"/>
+                                <rect x="420" y="100" width="170" height="6" rx="3" fill="rgba(255,255,255,0.10)"/>
+                                <rect x="420" y="114" width="150" height="6" rx="3" fill="rgba(255,255,255,0.10)"/>
+                                <rect x="160" y="184" width="450" height="160" rx="8" fill="rgba(255,255,255,0.05)"/>
+                                <rect x="180" y="204" width="300" height="8" rx="3" fill="rgba(255,255,255,0.20)"/>
+                                <rect x="180" y="224" width="250" height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+                                <rect x="180" y="240" width="280" height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+                                <rect x="180" y="256" width="220" height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+                                <rect x="180" y="272" width="350" height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+                                <rect x="180" y="288" width="200" height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+                                <rect x="180" y="304" width="310" height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+                                <circle cx="520" cy="224" r="30" fill="rgba(255,182,72,0.15)"/>
+                                <circle cx="520" cy="224" r="18" fill="rgba(255,182,72,0.25)"/>
+                                <text x="520" y="230" font-size="18" fill="#FFB648" text-anchor="middle" font-family="Inter,sans-serif" font-weight="700">78%</text>
+                            </svg>
+                        </div>
+                        <figcaption><h3>ERP Dashboard</h3><p>Modules, staff roles &amp; reports</p></figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <div class="gallery-shot" style="background:linear-gradient(145deg,#3730A9,#6D5EF5);">
+                            <svg viewBox="0 0 640 420" preserveAspectRatio="xMidYMid meet" class="gallery-svg">
+                                <rect width="640" height="420" rx="12" fill="#3730A9"/>
+                                <!-- top bar -->
+                                <rect x="0" y="0" width="640" height="44" rx="12" fill="#2B2680"/>
+                                <rect x="0" y="28" width="640" height="16" fill="#2B2680"/>
+                                <circle cx="28" cy="22" r="6" fill="#FF5F56" opacity="0.7"/>
+                                <circle cx="48" cy="22" r="6" fill="#FFBD2E" opacity="0.7"/>
+                                <circle cx="68" cy="22" r="6" fill="#27C93F" opacity="0.7"/>
+                                <rect x="94" y="16" width="120" height="12" rx="3" fill="rgba(255,255,255,0.12)"/>
+                                <!-- pipeline stages -->
+                                <rect x="20" y="64" width="140" height="280" rx="8" fill="rgba(255,255,255,0.05)"/>
+                                <text x="90" y="90" font-size="11" fill="rgba(255,255,255,0.40)" text-anchor="middle" font-family="Inter,sans-serif" font-weight="600">LEADS</text>
+                                <rect x="30" y="104" width="120" height="32" rx="4" fill="rgba(255,182,72,0.25)"/>
+                                <text x="90" y="124" font-size="10" fill="rgba(255,255,255,0.60)" text-anchor="middle" font-family="Inter,sans-serif">Acme Corp</text>
+                                <rect x="30" y="144" width="120" height="32" rx="4" fill="rgba(255,182,72,0.15)"/>
+                                <text x="90" y="164" font-size="10" fill="rgba(255,255,255,0.50)" text-anchor="middle" font-family="Inter,sans-serif">Bright NGO</text>
+                                <rect x="30" y="184" width="120" height="32" rx="4" fill="rgba(255,182,72,0.20)"/>
+                                <text x="90" y="204" font-size="10" fill="rgba(255,255,255,0.55)" text-anchor="middle" font-family="Inter,sans-serif">Green School</text>
+                                <rect x="180" y="64" width="140" height="280" rx="8" fill="rgba(255,255,255,0.05)"/>
+                                <text x="250" y="90" font-size="11" fill="rgba(255,255,255,0.40)" text-anchor="middle" font-family="Inter,sans-serif" font-weight="600">CONTACT</text>
+                                <rect x="190" y="104" width="120" height="32" rx="4" fill="rgba(109,94,245,0.30)"/>
+                                <text x="250" y="124" font-size="10" fill="rgba(255,255,255,0.60)" text-anchor="middle" font-family="Inter,sans-serif">Donor A</text>
+                                <rect x="190" y="144" width="120" height="32" rx="4" fill="rgba(109,94,245,0.20)"/>
+                                <text x="250" y="164" font-size="10" fill="rgba(255,255,255,0.50)" text-anchor="middle" font-family="Inter,sans-serif">Donor B</text>
+                                <rect x="340" y="64" width="140" height="280" rx="8" fill="rgba(255,255,255,0.05)"/>
+                                <text x="410" y="90" font-size="11" fill="rgba(255,255,255,0.40)" text-anchor="middle" font-family="Inter,sans-serif" font-weight="600">DEMO</text>
+                                <rect x="350" y="104" width="120" height="32" rx="4" fill="rgba(31,163,125,0.30)"/>
+                                <text x="410" y="124" font-size="10" fill="rgba(255,255,255,0.60)" text-anchor="middle" font-family="Inter,sans-serif">College ERP</text>
+                                <rect x="350" y="144" width="120" height="32" rx="4" fill="rgba(31,163,125,0.20)"/>
+                                <text x="410" y="164" font-size="10" fill="rgba(255,255,255,0.50)" text-anchor="middle" font-family="Inter,sans-serif">Restaurant POS</text>
+                                <rect x="500" y="64" width="120" height="280" rx="8" fill="rgba(255,255,255,0.05)"/>
+                                <text x="560" y="90" font-size="11" fill="rgba(255,255,255,0.40)" text-anchor="middle" font-family="Inter,sans-serif" font-weight="600">CLOSED</text>
+                                <rect x="510" y="104" width="100" height="32" rx="4" fill="rgba(255,182,72,0.20)"/>
+                                <text x="560" y="124" font-size="10" fill="rgba(255,255,255,0.50)" text-anchor="middle" font-family="Inter,sans-serif">Super Mart</text>
+                                <!-- bottom stats -->
+                                <rect x="20" y="360" width="600" height="36" rx="6" fill="rgba(255,255,255,0.04)"/>
+                                <text x="40" y="383" font-size="11" fill="rgba(255,255,255,0.35)" font-family="Inter,sans-serif">12 leads · 8 contacts · 4 demos · 2 closed</text>
+                            </svg>
+                        </div>
+                        <figcaption><h3>CRM Pipeline</h3><p>Leads, follow-ups &amp; donors</p></figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <div class="gallery-shot" style="background:linear-gradient(145deg,#1A7A5A,#1FA37D);">
+                            <svg viewBox="0 0 640 420" preserveAspectRatio="xMidYMid meet" class="gallery-svg">
+                                <rect width="640" height="420" rx="12" fill="#1A7A5A"/>
+                                <!-- top bar -->
+                                <rect x="0" y="0" width="640" height="44" rx="12" fill="#145F46"/>
+                                <rect x="0" y="28" width="640" height="16" fill="#145F46"/>
+                                <circle cx="28" cy="22" r="6" fill="#FF5F56" opacity="0.7"/>
+                                <circle cx="48" cy="22" r="6" fill="#FFBD2E" opacity="0.7"/>
+                                <circle cx="68" cy="22" r="6" fill="#27C93F" opacity="0.7"/>
+                                <rect x="94" y="16" width="120" height="12" rx="3" fill="rgba(255,255,255,0.12)"/>
+                                <text x="540" y="26" font-size="12" fill="rgba(255,255,255,0.40)" font-family="Inter,sans-serif">Order #1042</text>
+                                <!-- main panel -->
+                                <rect x="20" y="64" width="380" height="300" rx="8" fill="rgba(255,255,255,0.05)"/>
+                                <rect x="36" y="80" width="348" height="48" rx="6" fill="rgba(255,255,255,0.06)"/>
+                                <text x="50" y="100" font-size="13" fill="rgba(255,255,255,0.70)" font-family="Inter,sans-serif" font-weight="600">Table 4 · 2 guests</text>
+                                <text x="50" y="118" font-size="10" fill="rgba(255,255,255,0.35)" font-family="Inter,sans-serif">15:24 · Server: Ali</text>
+                                <!-- order items -->
+                                <rect x="36" y="142" width="348" height="28" rx="4" fill="rgba(255,255,255,0.04)"/>
+                                <text x="50" y="160" font-size="11" fill="rgba(255,255,255,0.60)" font-family="Inter,sans-serif">Grilled Chicken</text>
+                                <text x="340" y="160" font-size="11" fill="rgba(255,255,255,0.50)" font-family="Inter,sans-serif">$18.50</text>
+                                <rect x="36" y="174" width="348" height="28" rx="4" fill="rgba(255,255,255,0.04)"/>
+                                <text x="50" y="192" font-size="11" fill="rgba(255,255,255,0.60)" font-family="Inter,sans-serif">Pasta Alfredo</text>
+                                <text x="340" y="192" font-size="11" fill="rgba(255,255,255,0.50)" font-family="Inter,sans-serif">$14.00</text>
+                                <rect x="36" y="206" width="348" height="28" rx="4" fill="rgba(255,255,255,0.04)"/>
+                                <text x="50" y="224" font-size="11" fill="rgba(255,255,255,0.60)" font-family="Inter,sans-serif">Fresh Juice</text>
+                                <text x="340" y="224" font-size="11" fill="rgba(255,255,255,0.50)" font-family="Inter,sans-serif">$6.00</text>
+                                <rect x="36" y="238" width="348" height="28" rx="4" fill="rgba(255,255,255,0.04)"/>
+                                <text x="50" y="256" font-size="11" fill="rgba(255,255,255,0.60)" font-family="Inter,sans-serif">Garlic Bread</text>
+                                <text x="340" y="256" font-size="11" fill="rgba(255,255,255,0.50)" font-family="Inter,sans-serif">$4.50</text>
+                                <rect x="36" y="280" width="348" height="2" fill="rgba(255,255,255,0.06)"/>
+                                <text x="50" y="308" font-size="13" fill="rgba(255,255,255,0.70)" font-family="Inter,sans-serif" font-weight="600">TOTAL</text>
+                                <text x="340" y="308" font-size="14" fill="#FFB648" font-family="Inter,sans-serif" font-weight="700">$43.00</text>
+                                <!-- right panel: kitchen ticket -->
+                                <rect x="420" y="64" width="200" height="300" rx="8" fill="rgba(255,255,255,0.04)"/>
+                                <text x="520" y="90" font-size="11" fill="rgba(255,255,255,0.40)" text-anchor="middle" font-family="Inter,sans-serif" font-weight="600">KITCHEN TICKET</text>
+                                <rect x="436" y="104" width="168" height="2" fill="rgba(255,255,255,0.06)"/>
+                                <text x="436" y="124" font-size="10" fill="rgba(255,255,255,0.50)" font-family="Inter,sans-serif">• Grilled Chicken</text>
+                                <text x="436" y="144" font-size="10" fill="rgba(255,255,255,0.50)" font-family="Inter,sans-serif">• Pasta Alfredo</text>
+                                <text x="436" y="164" font-size="10" fill="rgba(255,255,255,0.50)" font-family="Inter,sans-serif">• Garlic Bread</text>
+                                <rect x="436" y="180" width="168" height="2" fill="rgba(255,255,255,0.06)"/>
+                                <rect x="436" y="196" width="168" height="28" rx="4" fill="rgba(255,182,72,0.15)"/>
+                                <text x="520" y="215" font-size="10" fill="#FFB648" text-anchor="middle" font-family="Inter,sans-serif" font-weight="600">⏱ 12 min</text>
+                                <!-- bottom action -->
+                                <rect x="420" y="360" width="200" height="36" rx="6" fill="rgba(255,182,72,0.20)"/>
+                                <text x="520" y="383" font-size="11" fill="#FFB648" text-anchor="middle" font-family="Inter,sans-serif" font-weight="600">PAY NOW</text>
+                            </svg>
+                        </div>
+                        <figcaption><h3>POS Billing</h3><p>Counter checkout &amp; tickets</p></figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <div class="gallery-shot" style="background:linear-gradient(145deg,#1A4B7A,#3A7BD5);">
+                            <svg viewBox="0 0 640 420" preserveAspectRatio="xMidYMid meet" class="gallery-svg">
+                                <rect width="640" height="420" rx="12" fill="#1A4B7A"/>
+                                <!-- browser chrome -->
+                                <rect x="0" y="0" width="640" height="44" rx="12" fill="#123A5E"/>
+                                <rect x="0" y="28" width="640" height="16" fill="#123A5E"/>
+                                <circle cx="28" cy="22" r="6" fill="#FF5F56" opacity="0.7"/>
+                                <circle cx="48" cy="22" r="6" fill="#FFBD2E" opacity="0.7"/>
+                                <circle cx="68" cy="22" r="6" fill="#27C93F" opacity="0.7"/>
+                                <rect x="94" y="16" width="300" height="12" rx="3" fill="rgba(255,255,255,0.10)"/>
+                                <!-- website header -->
+                                <rect x="0" y="44" width="640" height="80" fill="rgba(255,255,255,0.05)"/>
+                                <rect x="30" y="62" width="80" height="24" rx="4" fill="rgba(255,255,255,0.10)"/>
+                                <rect x="130" y="62" width="60" height="24" rx="4" fill="rgba(255,255,255,0.05)"/>
+                                <rect x="200" y="62" width="60" height="24" rx="4" fill="rgba(255,255,255,0.05)"/>
+                                <rect x="270" y="62" width="60" height="24" rx="4" fill="rgba(255,255,255,0.05)"/>
+                                <rect x="340" y="62" width="60" height="24" rx="4" fill="rgba(255,255,255,0.05)"/>
+                                <rect x="510" y="60" width="100" height="28" rx="6" fill="#FFB648" opacity="0.25"/>
+                                <text x="560" y="79" font-size="10" fill="#FFB648" text-anchor="middle" font-family="Inter,sans-serif" font-weight="600">Get Started</text>
+                                <!-- hero section -->
+                                <rect x="30" y="144" width="340" height="140" rx="8" fill="rgba(255,255,255,0.04)"/>
+                                <rect x="50" y="164" width="200" height="16" rx="3" fill="rgba(255,255,255,0.20)"/>
+                                <rect x="50" y="190" width="280" height="10" rx="3" fill="rgba(255,255,255,0.08)"/>
+                                <rect x="50" y="208" width="260" height="10" rx="3" fill="rgba(255,255,255,0.08)"/>
+                                <rect x="50" y="226" width="220" height="10" rx="3" fill="rgba(255,255,255,0.08)"/>
+                                <rect x="50" y="248" width="140" height="22" rx="4" fill="rgba(255,182,72,0.20)"/>
+                                <!-- right image placeholder -->
+                                <rect x="390" y="144" width="220" height="140" rx="8" fill="rgba(255,255,255,0.04)"/>
+                                <rect x="420" y="164" width="160" height="100" rx="4" fill="rgba(255,255,255,0.04)"/>
+                                <rect x="430" y="174" width="140" height="8" rx="3" fill="rgba(255,255,255,0.06)"/>
+                                <rect x="430" y="190" width="100" height="6" rx="3" fill="rgba(255,255,255,0.06)"/>
+                                <rect x="430" y="204" width="120" height="6" rx="3" fill="rgba(255,255,255,0.06)"/>
+                                <rect x="430" y="218" width="80" height="6" rx="3" fill="rgba(255,255,255,0.06)"/>
+                                <rect x="430" y="232" width="110" height="6" rx="3" fill="rgba(255,255,255,0.06)"/>
+                                <!-- footer -->
+                                <rect x="0" y="380" width="640" height="40" fill="rgba(255,255,255,0.03)"/>
+                                <rect x="30" y="394" width="120" height="12" rx="3" fill="rgba(255,255,255,0.06)"/>
+                                <rect x="180" y="394" width="80" height="12" rx="3" fill="rgba(255,255,255,0.06)"/>
+                                <rect x="290" y="394" width="80" height="12" rx="3" fill="rgba(255,255,255,0.06)"/>
+                            </svg>
+                        </div>
+                        <figcaption><h3>Website Build</h3><p>WordPress &amp; HTML delivery</p></figcaption>
+                    </figure>
+                </div>
+                <div class="work-badges">
+                    <span>15+ modules per ERP build</span>
+                    <span>Role-based staff access</span>
+                    <span>Custom reporting</span>
+                    <span>Many web apps delivered</span>
+                </div>
+                <div style="text-align:center;margin-top:48px;">
+                    <a href="projects.html" class="btn btn-primary" style="background:var(--indigo);color:#fff;box-shadow:0 6px 18px rgba(55,48,169,0.30);">View all projects →</a>
+                </div>
+            </div>
+        </section>
 
-  <!-- 8. FAQ -->
-  <section class="section faq" id="faq">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>Questions worth answering upfront</h2>
-      </div>
-      <div class="accordion" id="accordion">
-        <div class="acc-item is-open">
-          <button class="acc-trigger" aria-expanded="true">Can I see a live demo before I commit?</button>
-          <div class="acc-panel"><p>Yes. Every project starts with a working demo built on your own data, so you can test the system before any final agreement.</p></div>
-        </div>
-        <div class="acc-item">
-          <button class="acc-trigger" aria-expanded="false">What technology do you build with?</button>
-          <div class="acc-panel"><p>Our ERP and CRM systems are built in PHP with a MySQL database, giving you full ownership of your code and data with no vendor lock-in.</p></div>
-        </div>
-        <div class="acc-item">
-          <button class="acc-trigger" aria-expanded="false">Do you only build software for schools?</button>
-          <div class="acc-panel"><p>No. We build ERP and CRM systems for NGOs, schools, colleges, restaurants and super marts, and each system is tailored to how that organization actually works.</p></div>
-        </div>
-        <div class="acc-item">
-          <button class="acc-trigger" aria-expanded="false">Do you also build websites?</button>
-          <div class="acc-panel"><p>Yes, website development is our secondary specialty. We build in WordPress and plain HTML, and have delivered many web applications across different industries.</p></div>
-        </div>
-        <div class="acc-item">
-          <button class="acc-trigger" aria-expanded="false">How long does a build take?</button>
-          <div class="acc-panel"><p>A working demo is usually ready within days. Full deployment timing depends on how many modules and how much data migration your organization needs.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
+        <!-- 8. FAQ -->
+        <section class="section faq" id="faq">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Questions worth answering upfront</h2>
+                </div>
+                <div class="accordion" id="accordion">
+                    <div class="acc-item is-open">
+                        <button class="acc-trigger" aria-expanded="true">Can I see a live demo before I commit?</button>
+                        <div class="acc-panel"><p>Yes. Every project starts with a working demo built on your own data, so you can test the system before any final agreement.</p></div>
+                    </div>
+                    <div class="acc-item">
+                        <button class="acc-trigger" aria-expanded="false">What technology do you build with?</button>
+                        <div class="acc-panel"><p>Our ERP and CRM systems are built in PHP with a MySQL database, giving you full ownership of your code and data with no vendor lock-in.</p></div>
+                    </div>
+                    <div class="acc-item">
+                        <button class="acc-trigger" aria-expanded="false">Do you only build software for schools?</button>
+                        <div class="acc-panel"><p>No. We build ERP and CRM systems for NGOs, schools, colleges, restaurants and super marts, and each system is tailored to how that organization actually works.</p></div>
+                    </div>
+                    <div class="acc-item">
+                        <button class="acc-trigger" aria-expanded="false">Do you also build websites?</button>
+                        <div class="acc-panel"><p>Yes, website development is our secondary specialty. We build in WordPress and plain HTML, and have delivered many web applications across different industries.</p></div>
+                    </div>
+                    <div class="acc-item">
+                        <button class="acc-trigger" aria-expanded="false">How long does a build take?</button>
+                        <div class="acc-panel"><p>A working demo is usually ready within days. Full deployment timing depends on how many modules and how much data migration your organization needs.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- 9. CONTACT -->
-  <section class="section contact" id="contact">
-    <div class="wrap contact-inner">
-      <div class="contact-copy">
-        <h2>Let's look at your process</h2>
-        <p>Tell us what you're running on now — registers, spreadsheets, another system — and we'll show you what a working demo could look like.</p>
-        <div class="contact-methods">
-          <a href="mailto:waqas.pccp@gmail.com" class="contact-method">
-            <span class="contact-label">Email</span>
-            <span class="contact-value">waqas.pccp@gmail.com</span>
-          </a>
-          <a href="tel:+923402324446" class="contact-method">
-            <span class="contact-label">Phone</span>
-            <span class="contact-value">0340-2324446</span>
-          </a>
-        </div>
-      </div>
-      <div class="contact-card">
-        <h3>Before you reach out, have ready:</h3>
-        <ul>
-          <li>Which industry you're in (NGO, school, college, restaurant, or super mart)</li>
-          <li>Roughly how many staff will use the system</li>
-          <li>What you're currently using — paper, Excel, or another system</li>
-        </ul>
-        <a href="mailto:waqas.pccp@gmail.com" class="btn btn-primary btn-block">Email us to start</a>
-      </div>
-    </div>
-  </section>
+        <!-- 9. CONTACT -->
+        <section class="section contact" id="contact">
+            <div class="wrap contact-inner">
+                <div class="contact-copy">
+                    <h2>Let's look at your process</h2>
+                    <p>Tell us what you're running on now — registers, spreadsheets, another system — and we'll show you what a working demo could look like.</p>
+                    <div class="contact-methods">
+                        <a href="mailto:waqas.pccp@gmail.com" class="contact-method">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">waqas.pccp@gmail.com</span>
+                        </a>
+                        <a href="tel:+923402324446" class="contact-method">
+                            <span class="contact-label">Phone</span>
+                            <span class="contact-value">0340-2324446</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <h3>Before you reach out, have ready:</h3>
+                    <ul>
+                        <li>Which industry you're in (NGO, school, college, restaurant, or super mart)</li>
+                        <li>Roughly how many staff will use the system</li>
+                        <li>What you're currently using — paper, Excel, or another system</li>
+                    </ul>
+                    <a href="mailto:waqas.pccp@gmail.com" class="btn btn-primary btn-block">Email us to start</a>
+                </div>
+            </div>
+        </section>
 
-</main>
+    </main>
 
-<!-- FOOTER (injected by components/footer.js) -->
-<div id="footer-root"></div>
+    <!-- FOOTER (injected by components/footer.js) -->
+    <div id="footer-root"></div>
 
-<script src="components/header.js"></script>
-<script src="components/footer.js"></script>
-<script src="script.js"></script>
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
