@@ -183,80 +183,87 @@
         </section>
 
         <!-- 4. INDUSTRIES (interactive tabs) -->
-        <section class="section industries" id="industries">
-            <div class="wrap">
-                <div class="section-head">
-                    <h2>One system, shaped five different ways</h2>
-                    <p>Tap an industry to see what the software actually handles.</p>
+       <!-- 4. INDUSTRIES (interactive tabs) - MOBILE COMPATIBLE -->
+<section class="section industries" id="industries">
+    <div class="wrap">
+        <div class="section-head">
+            <h2>One system, shaped five different ways</h2>
+            <p>Tap an industry to see what the software actually handles.</p>
+        </div>
+        <div class="tabs" id="industryTabs">
+            <!-- Tab buttons - now scrollable horizontally on mobile -->
+            <div class="tab-buttons" role="tablist" style="overflow-x:auto;overflow-y:hidden;white-space:nowrap;display:flex;flex-wrap:nowrap;gap:8px;padding:4px 0 12px;scrollbar-width:thin;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;">
+                <button class="tab-btn is-active" role="tab" aria-selected="true" data-tab="ngo" style="flex:0 0 auto;">NGOs</button>
+                <button class="tab-btn" role="tab" aria-selected="false" data-tab="school" style="flex:0 0 auto;">Schools</button>
+                <button class="tab-btn" role="tab" aria-selected="false" data-tab="college" style="flex:0 0 auto;">Colleges</button>
+                <button class="tab-btn" role="tab" aria-selected="false" data-tab="restaurant" style="flex:0 0 auto;">Restaurants</button>
+                <button class="tab-btn" role="tab" aria-selected="false" data-tab="mart" style="flex:0 0 auto;">Super Marts</button>
+            </div>
+            <div class="tab-panels">
+                <!-- NGO Panel -->
+                <div class="tab-panel is-active" id="panel-ngo" role="tabpanel">
+                    <div class="tab-panel-copy">
+                        <h3>NGO &amp; Charity Management</h3>
+                        <p>Track donations and donors, manage project budgets, log field expenditure and generate the reports your funders ask for — all reconciled against a proper chart of accounts.</p>
+                        <ul><li>Donation &amp; donor tracking</li><li>Expenditure &amp; approvals</li><li>Beneficiary records</li><li>Funder-ready reports</li></ul>
+                    </div>
+                    <figure class="tab-panel-shot">
+                        <img src="images/industry-ngo.svg" alt="NGO donor and donation-tracking dashboard screen" loading="lazy" width="640" height="420">
+                        <figcaption>Sample donor dashboard</figcaption>
+                    </figure>
                 </div>
-                <div class="tabs" id="industryTabs">
-                    <div class="tab-buttons" role="tablist">
-                        <button class="tab-btn is-active" role="tab" aria-selected="true" data-tab="ngo">NGOs</button>
-                        <button class="tab-btn" role="tab" aria-selected="false" data-tab="school">Schools</button>
-                        <button class="tab-btn" role="tab" aria-selected="false" data-tab="college">Colleges</button>
-                        <button class="tab-btn" role="tab" aria-selected="false" data-tab="restaurant">Restaurants</button>
-                        <button class="tab-btn" role="tab" aria-selected="false" data-tab="mart">Super Marts</button>
+                <!-- School Panel -->
+                <div class="tab-panel" id="panel-school" role="tabpanel">
+                    <div class="tab-panel-copy">
+                        <h3>School Management</h3>
+                        <p>Admissions, fee vouchers, attendance, exam results and staff payroll in one place, so front-desk staff and management are always looking at the same numbers.</p>
+                        <ul><li>Admissions &amp; enrollment</li><li>Fee vouchers &amp; ledgers</li><li>Attendance &amp; result cards</li><li>Staff payroll</li></ul>
                     </div>
-                    <div class="tab-panels">
-                        <div class="tab-panel is-active" id="panel-ngo" role="tabpanel">
-                            <div class="tab-panel-copy">
-                                <h3>NGO &amp; Charity Management</h3>
-                                <p>Track donations and donors, manage project budgets, log field expenditure and generate the reports your funders ask for — all reconciled against a proper chart of accounts.</p>
-                                <ul><li>Donation &amp; donor tracking</li><li>Expenditure &amp; approvals</li><li>Beneficiary records</li><li>Funder-ready reports</li></ul>
-                            </div>
-                            <figure class="tab-panel-shot">
-                                <img src="images/industry-ngo.svg" alt="NGO donor and donation-tracking dashboard screen" loading="lazy" width="640" height="420">
-                                <figcaption>Sample donor dashboard</figcaption>
-                            </figure>
-                        </div>
-                        <div class="tab-panel" id="panel-school" role="tabpanel">
-                            <div class="tab-panel-copy">
-                                <h3>School Management</h3>
-                                <p>Admissions, fee vouchers, attendance, exam results and staff payroll in one place, so front-desk staff and management are always looking at the same numbers.</p>
-                                <ul><li>Admissions &amp; enrollment</li><li>Fee vouchers &amp; ledgers</li><li>Attendance &amp; result cards</li><li>Staff payroll</li></ul>
-                            </div>
-                            <figure class="tab-panel-shot">
-                                <img src="images/industry-school.svg" alt="School fee and attendance management dashboard screen" loading="lazy" width="640" height="420">
-                                <figcaption>Sample admissions overview</figcaption>
-                            </figure>
-                        </div>
-                        <div class="tab-panel" id="panel-college" role="tabpanel">
-                            <div class="tab-panel-copy">
-                                <h3>College ERP</h3>
-                                <p>Everything a school system needs, scaled up — multiple departments, semester-wise fee structures, faculty scheduling and transcript generation.</p>
-                                <ul><li>Department &amp; semester structure</li><li>Faculty scheduling</li><li>Transcript &amp; GPA records</li><li>Multi-campus support</li></ul>
-                            </div>
-                            <figure class="tab-panel-shot">
-                                <img src="images/industry-college.svg" alt="College ERP department and semester overview screen" loading="lazy" width="640" height="420">
-                                <figcaption>Sample department view</figcaption>
-                            </figure>
-                        </div>
-                        <div class="tab-panel" id="panel-restaurant" role="tabpanel">
-                            <div class="tab-panel-copy">
-                                <h3>Restaurant POS &amp; Management</h3>
-                                <p>Point-of-sale for the counter, kitchen order tickets, table management and stock control, with daily sales reports that close out in minutes.</p>
-                                <ul><li>POS &amp; billing</li><li>Kitchen order tickets</li><li>Table &amp; reservation view</li><li>Stock &amp; wastage tracking</li></ul>
-                            </div>
-                            <figure class="tab-panel-shot">
-                                <img src="images/industry-restaurant.svg" alt="Restaurant point-of-sale and daily sales dashboard screen" loading="lazy" width="640" height="420">
-                                <figcaption>Sample POS overview</figcaption>
-                            </figure>
-                        </div>
-                        <div class="tab-panel" id="panel-mart" role="tabpanel">
-                            <div class="tab-panel-copy">
-                                <h3>Super Mart Software</h3>
-                                <p>Barcode-driven billing, multi-branch inventory, supplier ledgers and low-stock alerts, built for the pace of a busy checkout counter.</p>
-                                <ul><li>Barcode billing</li><li>Multi-branch inventory</li><li>Supplier ledgers</li><li>Low-stock alerts</li></ul>
-                            </div>
-                            <figure class="tab-panel-shot">
-                                <img src="images/industry-mart.svg" alt="Super mart multi-branch inventory dashboard screen" loading="lazy" width="640" height="420">
-                                <figcaption>Sample inventory overview</figcaption>
-                            </figure>
-                        </div>
+                    <figure class="tab-panel-shot">
+                        <img src="images/industry-school.svg" alt="School fee and attendance management dashboard screen" loading="lazy" width="640" height="420">
+                        <figcaption>Sample admissions overview</figcaption>
+                    </figure>
+                </div>
+                <!-- College Panel -->
+                <div class="tab-panel" id="panel-college" role="tabpanel">
+                    <div class="tab-panel-copy">
+                        <h3>College ERP</h3>
+                        <p>Everything a school system needs, scaled up — multiple departments, semester-wise fee structures, faculty scheduling and transcript generation.</p>
+                        <ul><li>Department &amp; semester structure</li><li>Faculty scheduling</li><li>Transcript &amp; GPA records</li><li>Multi-campus support</li></ul>
                     </div>
+                    <figure class="tab-panel-shot">
+                        <img src="images/industry-college.svg" alt="College ERP department and semester overview screen" loading="lazy" width="640" height="420">
+                        <figcaption>Sample department view</figcaption>
+                    </figure>
+                </div>
+                <!-- Restaurant Panel -->
+                <div class="tab-panel" id="panel-restaurant" role="tabpanel">
+                    <div class="tab-panel-copy">
+                        <h3>Restaurant POS &amp; Management</h3>
+                        <p>Point-of-sale for the counter, kitchen order tickets, table management and stock control, with daily sales reports that close out in minutes.</p>
+                        <ul><li>POS &amp; billing</li><li>Kitchen order tickets</li><li>Table &amp; reservation view</li><li>Stock &amp; wastage tracking</li></ul>
+                    </div>
+                    <figure class="tab-panel-shot">
+                        <img src="images/industry-restaurant.svg" alt="Restaurant point-of-sale and daily sales dashboard screen" loading="lazy" width="640" height="420">
+                        <figcaption>Sample POS overview</figcaption>
+                    </figure>
+                </div>
+                <!-- Super Mart Panel -->
+                <div class="tab-panel" id="panel-mart" role="tabpanel">
+                    <div class="tab-panel-copy">
+                        <h3>Super Mart Software</h3>
+                        <p>Barcode-driven billing, multi-branch inventory, supplier ledgers and low-stock alerts, built for the pace of a busy checkout counter.</p>
+                        <ul><li>Barcode billing</li><li>Multi-branch inventory</li><li>Supplier ledgers</li><li>Low-stock alerts</li></ul>
+                    </div>
+                    <figure class="tab-panel-shot">
+                        <img src="images/industry-mart.svg" alt="Super mart multi-branch inventory dashboard screen" loading="lazy" width="640" height="420">
+                        <figcaption>Sample inventory overview</figcaption>
+                    </figure>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
         <!-- 5. WHY / DEMO PROMISE -->
         <section class="section demo-promise" id="demo">
