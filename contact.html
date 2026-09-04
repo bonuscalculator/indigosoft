@@ -27,6 +27,99 @@
 
     <link rel="stylesheet" href="styles.css" />
 
+    <style>
+        .contact-hero {
+            padding: 60px 0 40px;
+            background: var(--bg-alt);
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+        .contact-info-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .contact-card-item {
+            background: var(--card);
+            border-radius: var(--radius-md);
+            padding: 24px;
+            border: 1px solid var(--line);
+        }
+        .contact-card-label {
+            font-size: 0.78rem;
+            color: var(--indigo);
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+        .contact-card-link {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--ink);
+            text-decoration: none;
+            transition: color .2s ease;
+            word-break: break-word;
+        }
+        .contact-card-link:hover {
+            color: var(--indigo);
+        }
+        .contact-quick-actions {
+            margin-top: 32px;
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .contact-prep-box {
+            background: var(--indigo);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            color: #fff;
+        }
+
+        @media (max-width: 900px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 760px) {
+            .contact-hero {
+                padding: 40px 0 30px;
+            }
+            .contact-card-item {
+                padding: 18px;
+            }
+            .contact-card-link {
+                font-size: 1rem;
+            }
+            .contact-prep-box {
+                padding: 28px 20px;
+            }
+            .contact-quick-actions {
+                margin-top: 24px;
+                gap: 12px;
+            }
+            .contact-quick-actions .btn {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-hero {
+                padding: 30px 0 20px;
+            }
+            .contact-prep-box {
+                padding: 20px 16px;
+            }
+        }
+    </style>
+
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -45,7 +138,7 @@
     <main id="top">
 
         <!-- PAGE HEADER -->
-        <section style="padding:60px 0 40px;background:var(--bg-alt);">
+        <section class="contact-hero">
             <div class="wrap">
                 <div class="section-head" style="max-width:100%;">
                     <h1 style="font-size:clamp(2.2rem, 4vw, 3.2rem);">Get in touch</h1>
@@ -57,42 +150,42 @@
         <!-- CONTACT SECTION -->
         <section class="section" style="padding-top:20px;background:var(--bg);">
             <div class="wrap">
-                <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;">
+                <div class="contact-grid">
 
                     <!-- Contact Info -->
                     <div>
                         <h2 style="font-size:clamp(1.6rem, 2.5vw, 2rem);margin-bottom:16px;">Let's look at your process</h2>
                         <p style="color:var(--ink-soft);font-size:1.05rem;margin-bottom:32px;">Tell us what you're running on now — registers, spreadsheets, another system — and we'll show you what a working demo could look like.</p>
 
-                        <div style="display:flex;flex-direction:column;gap:20px;">
-                            <div style="background:var(--card);border-radius:var(--radius-md);padding:24px;border:1px solid var(--line);">
-                                <div style="font-size:0.78rem;color:var(--indigo);font-weight:700;letter-spacing:0.02em;text-transform:uppercase;margin-bottom:4px;">Email</div>
-                                <a href="mailto:hello@indigosoftware.online" style="font-size:1.15rem;font-weight:600;color:var(--ink);text-decoration:none;transition:color .2s ease;" onmouseover="this.style.color='var(--indigo)'" onmouseout="this.style.color='var(--ink)'">hello@indigosoftware.online</a>
+                        <div class="contact-info-list">
+                            <div class="contact-card-item">
+                                <div class="contact-card-label">Email</div>
+                                <a href="mailto:hello@indigosoftware.online" class="contact-card-link">hello@indigosoftware.online</a>
                             </div>
-                            <div style="background:var(--card);border-radius:var(--radius-md);padding:24px;border:1px solid var(--line);">
-                                <div style="font-size:0.78rem;color:var(--indigo);font-weight:700;letter-spacing:0.02em;text-transform:uppercase;margin-bottom:4px;">Phone / WhatsApp</div>
-                                <a href="tel:+923402324446" style="font-size:1.15rem;font-weight:600;color:var(--ink);text-decoration:none;transition:color .2s ease;" onmouseover="this.style.color='var(--indigo)'" onmouseout="this.style.color='var(--ink)'">0340-2324446</a>
+                            <div class="contact-card-item">
+                                <div class="contact-card-label">Phone / WhatsApp</div>
+                                <a href="tel:+923402324446" class="contact-card-link">0340-2324446</a>
                             </div>
-                            <div style="background:var(--card);border-radius:var(--radius-md);padding:24px;border:1px solid var(--line);">
-                                <div style="font-size:0.78rem;color:var(--indigo);font-weight:700;letter-spacing:0.02em;text-transform:uppercase;margin-bottom:4px;">Location</div>
+                            <div class="contact-card-item">
+                                <div class="contact-card-label">Location</div>
                                 <div style="font-size:1.05rem;color:var(--ink-soft);">Pakistan (serving clients worldwide)</div>
                             </div>
                         </div>
 
                         <!-- Social / Quick links -->
-                        <div style="margin-top:32px;display:flex;gap:16px;flex-wrap:wrap;">
+                        <div class="contact-quick-actions">
                             <a href="mailto:waqas.pccp@gmail.com" class="btn btn-primary" style="background:var(--indigo);color:#fff;box-shadow:0 6px 18px rgba(55,48,169,0.30);">Email us directly</a>
                             <a href="tel:+923402324446" class="btn btn-ghost">Call us</a>
                         </div>
                     </div>
 
                     <!-- What to prepare -->
-                    <div style="background:var(--indigo);border-radius:var(--radius-lg);padding:40px;color:#fff;">
+                    <div class="contact-prep-box">
                         <h3 style="color:#fff;font-size:1.3rem;margin-bottom:20px;">Before you reach out, have ready:</h3>
                         <ul style="display:flex;flex-direction:column;gap:16px;list-style:none;padding:0;margin:0;">
                             <li style="display:flex;gap:14px;align-items:flex-start;font-size:1rem;color:rgba(255,255,255,0.88);">
                                 <span style="flex:none;width:24px;height:24px;border-radius:999px;background:rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.75rem;color:var(--amber);">1</span>
-                                Which industry you're in <span style="color:rgba(255,255,255,0.5);font-size:0.85rem;">(NGO, school, college, restaurant, or super mart)</span>
+                                <div>Which industry you're in <span style="display:block;color:rgba(255,255,255,0.6);font-size:0.85rem;margin-top:2px;">(NGO, school, college, restaurant, or super mart)</span></div>
                             </li>
                             <li style="display:flex;gap:14px;align-items:flex-start;font-size:1rem;color:rgba(255,255,255,0.88);">
                                 <span style="flex:none;width:24px;height:24px;border-radius:999px;background:rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.75rem;color:var(--amber);">2</span>
