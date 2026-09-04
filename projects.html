@@ -66,319 +66,160 @@
             </div>
         </section>
 
-        <!-- PROJECTS GRID -->
-        <section class="section" style="padding-top:20px;background:var(--bg);">
-            <div class="wrap">
-                <div class="projects-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:32px;">
-
-                    <!-- Project 1: NGO Management System -->
-                    <article class="project-card" style="background:var(--card);border-radius:var(--radius-lg);border:1px solid var(--line);overflow:hidden;transition:transform .25s ease,box-shadow .25s ease;">
-                        <div class="project-visual" style="background:linear-gradient(145deg,#2B2680,#4C3FD6);padding:20px;min-height:200px;display:flex;align-items:center;justify-content:center;">
-                            <svg viewBox="0 0 400 200" width="100%" height="100%" style="max-height:180px;">
-                                <rect width="400" height="200" rx="8" fill="#2B2680"/>
-                                <!-- top bar -->
-                                <rect x="0" y="0" width="400" height="28" rx="8" fill="#1E1A5E"/>
-                                <rect x="0" y="18" width="400" height="10" fill="#1E1A5E"/>
-                                <circle cx="20" cy="14" r="4" fill="#FF5F56" opacity="0.7"/>
-                                <circle cx="34" cy="14" r="4" fill="#FFBD2E" opacity="0.7"/>
-                                <circle cx="48" cy="14" r="4" fill="#27C93F" opacity="0.7"/>
-                                <rect x="70" y="10" width="80" height="8" rx="2" fill="rgba(255,255,255,0.12)"/>
-                                <!-- sidebar -->
-                                <rect x="0" y="28" width="80" height="172" fill="#1E1A5E" opacity="0.4"/>
-                                <rect x="12" y="44" width="56" height="6" rx="2" fill="rgba(255,255,255,0.10)"/>
-                                <rect x="12" y="58" width="40" height="6" rx="2" fill="rgba(255,255,255,0.20)"/>
-                                <rect x="12" y="72" width="50" height="6" rx="2" fill="rgba(255,255,255,0.10)"/>
-                                <rect x="12" y="86" width="35" height="6" rx="2" fill="rgba(255,255,255,0.10)"/>
-                                <!-- main content -->
-                                <rect x="96" y="40" width="140" height="60" rx="4" fill="rgba(255,255,255,0.06)"/>
-                                <rect x="110" y="50" width="60" height="6" rx="2" fill="rgba(255,255,255,0.25)"/>
-                                <rect x="110" y="62" width="100" height="4" rx="2" fill="rgba(255,255,255,0.10)"/>
-                                <rect x="110" y="72" width="80" height="4" rx="2" fill="rgba(255,255,255,0.10)"/>
-                                <rect x="110" y="82" width="90" height="4" rx="2" fill="rgba(255,255,255,0.10)"/>
-                                <rect x="250" y="40" width="130" height="60" rx="4" fill="rgba(255,255,255,0.06)"/>
-                                <rect x="264" y="50" width="50" height="6" rx="2" fill="rgba(255,255,255,0.25)"/>
-                                <rect x="264" y="62" width="100" height="4" rx="2" fill="rgba(255,255,255,0.10)"/>
-                                <rect x="264" y="72" width="90" height="4" rx="2" fill="rgba(255,255,255,0.10)"/>
-                                <rect x="96" y="110" width="284" height="60" rx="4" fill="rgba(255,255,255,0.04)"/>
-                                <rect x="110" y="122" width="180" height="6" rx="2" fill="rgba(255,255,255,0.15)"/>
-                                <rect x="110" y="136" width="160" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="110" y="148" width="140" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
-                            </svg>
+        <!-- 4. INDUSTRIES (interactive tabs) - MOBILE COMPATIBLE -->
+<section class="section industries" id="industries">
+    <div class="wrap">
+        <div class="section-head">
+            <h2>One system, shaped five different ways</h2>
+            <p>Tap an industry to see what the software actually handles.</p>
+        </div>
+        <div class="tabs" id="industryTabs">
+            <!-- Tab buttons - horizontally scrollable on mobile -->
+            <div class="tab-buttons" role="tablist" style="overflow-x:auto;overflow-y:hidden;white-space:nowrap;display:flex;flex-wrap:nowrap;gap:8px;padding:4px 0 12px;scrollbar-width:thin;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;">
+                <button class="tab-btn is-active" role="tab" aria-selected="true" data-tab="ngo" style="flex:0 0 auto;">NGOs</button>
+                <button class="tab-btn" role="tab" aria-selected="false" data-tab="school" style="flex:0 0 auto;">Schools</button>
+                <button class="tab-btn" role="tab" aria-selected="false" data-tab="college" style="flex:0 0 auto;">Colleges</button>
+                <button class="tab-btn" role="tab" aria-selected="false" data-tab="restaurant" style="flex:0 0 auto;">Restaurants</button>
+                <button class="tab-btn" role="tab" aria-selected="false" data-tab="mart" style="flex:0 0 auto;">Super Marts</button>
+            </div>
+            <div class="tab-panels">
+                <!-- NGO Panel -->
+                <div class="tab-panel is-active" id="panel-ngo" role="tabpanel">
+                    <div class="tab-panel-copy">
+                        <h3>NGO &amp; Charity Management</h3>
+                        <p>Track donations and donors, manage project budgets, log field expenditure and generate the reports your funders ask for — all reconciled against a proper chart of accounts.</p>
+                        <ul><li>Donation &amp; donor tracking</li><li>Expenditure &amp; approvals</li><li>Beneficiary records</li><li>Funder-ready reports</li></ul>
+                    </div>
+                    <figure class="tab-panel-shot">
+                        <div style="background:linear-gradient(145deg,#e8e5f0,#d5d0e6);border-radius:var(--radius-md);border:2px dashed var(--line);padding:60px 20px;text-align:center;min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+                            <div style="font-size:3rem;margin-bottom:12px;">📊</div>
+                            <div style="font-size:0.85rem;color:var(--ink-soft);font-weight:500;">NGO Dashboard</div>
+                            <div style="font-size:0.75rem;color:var(--ink-soft);opacity:0.6;margin-top:4px;">Upload landscape image (1200×630px)</div>
                         </div>
-                        <div class="project-content" style="padding:24px 28px 28px;">
-                            <span style="display:inline-block;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;padding:4px 12px;border-radius:999px;background:var(--bg-alt);color:var(--indigo);margin-bottom:12px;">NGO</span>
-                            <h3 style="font-size:1.2rem;margin-bottom:8px;">NGO Donor &amp; Project Management</h3>
-                            <p style="color:var(--ink-soft);font-size:0.95rem;margin-bottom:14px;">Complete donor tracking, project budgeting, expenditure logging, and funder-ready reporting for a national charity network.</p>
-                            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;">
-                                <span style="font-size:0.75rem;padding:3px 10px;border-radius:999px;background:var(--bg-alt);color:var(--ink-soft);">PHP</span>
-                                <span style="font-size:0.75rem;padding:3px 10px;border-radius:999px;background:var(--bg-alt);color:var(--ink-soft);">MySQL</span>
-                                <span style="font-size:0.75rem;padding:3px 10px;border-radius:999px;background:var(--bg-alt);color:var(--ink-soft);">Donor Tracking</span>
-                                <span style="font-size:0.75rem;padding:3px 10px;border-radius:999px;background:var(--bg-alt);color:var(--ink-soft);">Reporting</span>
-                            </div>
-                            <a href="#contact" class="btn btn-primary" style="padding:10px 20px;font-size:0.85rem;background:var(--indigo);color:#fff;box-shadow:none;">View project →</a>
+                        <figcaption>Sample donor dashboard</figcaption>
+                    </figure>
+                </div>
+                <!-- School Panel -->
+                <div class="tab-panel" id="panel-school" role="tabpanel">
+                    <div class="tab-panel-copy">
+                        <h3>School Management</h3>
+                        <p>Admissions, fee vouchers, attendance, exam results and staff payroll in one place, so front-desk staff and management are always looking at the same numbers.</p>
+                        <ul><li>Admissions &amp; enrollment</li><li>Fee vouchers &amp; ledgers</li><li>Attendance &amp; result cards</li><li>Staff payroll</li></ul>
+                    </div>
+                    <figure class="tab-panel-shot">
+                        <div style="background:linear-gradient(145deg,#e8f0f0,#d5e6e6);border-radius:var(--radius-md);border:2px dashed var(--line);padding:60px 20px;text-align:center;min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+                            <div style="font-size:3rem;margin-bottom:12px;">🏫</div>
+                            <div style="font-size:0.85rem;color:var(--ink-soft);font-weight:500;">School Dashboard</div>
+                            <div style="font-size:0.75rem;color:var(--ink-soft);opacity:0.6;margin-top:4px;">Upload landscape image (1200×630px)</div>
                         </div>
-                    </article>
-
-                    <!-- Project 2: School Management System -->
-                    <article class="project-card" style="background:var(--card);border-radius:var(--radius-lg);border:1px solid var(--line);overflow:hidden;transition:transform .25s ease,box-shadow .25s ease;">
-                        <div class="project-visual" style="background:linear-gradient(145deg,#3730A9,#6D5EF5);padding:20px;min-height:200px;display:flex;align-items:center;justify-content:center;">
-                            <svg viewBox="0 0 400 200" width="100%" height="100%" style="max-height:180px;">
-                                <rect width="400" height="200" rx="8" fill="#3730A9"/>
-                                <rect x="0" y="0" width="400" height="28" rx="8" fill="#2B2680"/>
-                                <rect x="0" y="18" width="400" height="10" fill="#2B2680"/>
-                                <circle cx="20" cy="14" r="4" fill="#FF5F56" opacity="0.7"/>
-                                <circle cx="34" cy="14" r="4" fill="#FFBD2E" opacity="0.7"/>
-                                <circle cx="48" cy="14" r="4" fill="#27C93F" opacity="0.7"/>
-                                <rect x="70" y="10" width="120" height="8" rx="2" fill="rgba(255,255,255,0.12)"/>
-                                <!-- stats row -->
-                                <rect x="16" y="44" width="114" height="44" rx="4" fill="rgba(255,255,255,0.06)"/>
-                                <rect x="28" y="54" width="40" height="8" rx="2" fill="rgba(255,255,255,0.25)"/>
-                                <rect x="28" y="68" width="30" height="6" rx="2" fill="rgba(255,255,255,0.12)"/>
-                                <rect x="140" y="44" width="114" height="44" rx="4" fill="rgba(255,255,255,0.06)"/>
-                                <rect x="152" y="54" width="40" height="8" rx="2" fill="rgba(255,255,255,0.25)"/>
-                                <rect x="152" y="68" width="30" height="6" rx="2" fill="rgba(255,255,255,0.12)"/>
-                                <rect x="264" y="44" width="114" height="44" rx="4" fill="rgba(255,255,255,0.06)"/>
-                                <rect x="276" y="54" width="40" height="8" rx="2" fill="rgba(255,255,255,0.25)"/>
-                                <rect x="276" y="68" width="30" height="6" rx="2" fill="rgba(255,255,255,0.12)"/>
-                                <!-- table -->
-                                <rect x="16" y="100" width="362" height="80" rx="4" fill="rgba(255,255,255,0.04)"/>
-                                <rect x="28" y="112" width="100" height="6" rx="2" fill="rgba(255,255,255,0.15)"/>
-                                <rect x="140" y="112" width="80" height="6" rx="2" fill="rgba(255,255,255,0.10)"/>
-                                <rect x="232" y="112" width="60" height="6" rx="2" fill="rgba(255,255,255,0.10)"/>
-                                <rect x="304" y="112" width="50" height="6" rx="2" fill="rgba(255,255,255,0.10)"/>
-                                <rect x="28" y="126" width="90" height="5" rx="2" fill="rgba(255,255,255,0.07)"/>
-                                <rect x="140" y="126" width="70" height="5" rx="2" fill="rgba(255,255,255,0.07)"/>
-                                <rect x="232" y="126" width="55" height="5" rx="2" fill="rgba(255,255,255,0.07)"/>
-                                <rect x="304" y="126" width="45" height="5" rx="2" fill="rgba(255,255,255,0.07)"/>
-                                <rect x="28" y="140" width="85" height="5" rx="2" fill="rgba(255,255,255,0.07)"/>
-                                <rect x="140" y="140" width="75" height="5" rx="2" fill="rgba(255,255,255,0.07)"/>
-                                <rect x="232" y="140" width="60" height="5" rx="2" fill="rgba(255,255,255,0.07)"/>
-                                <rect x="304" y="140" width="50" height="5" rx="2" fill="rgba(255,255,255,0.07)"/>
-                            </svg>
+                        <figcaption>Sample admissions overview</figcaption>
+                    </figure>
+                </div>
+                <!-- College Panel -->
+                <div class="tab-panel" id="panel-college" role="tabpanel">
+                    <div class="tab-panel-copy">
+                        <h3>College ERP</h3>
+                        <p>Everything a school system needs, scaled up — multiple departments, semester-wise fee structures, faculty scheduling and transcript generation.</p>
+                        <ul><li>Department &amp; semester structure</li><li>Faculty scheduling</li><li>Transcript &amp; GPA records</li><li>Multi-campus support</li></ul>
+                    </div>
+                    <figure class="tab-panel-shot">
+                        <div style="background:linear-gradient(145deg,#e8ecf5,#d5dcee);border-radius:var(--radius-md);border:2px dashed var(--line);padding:60px 20px;text-align:center;min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+                            <div style="font-size:3rem;margin-bottom:12px;">🎓</div>
+                            <div style="font-size:0.85rem;color:var(--ink-soft);font-weight:500;">College ERP Dashboard</div>
+                            <div style="font-size:0.75rem;color:var(--ink-soft);opacity:0.6;margin-top:4px;">Upload landscape image (1200×630px)</div>
                         </div>
-                        <div class="project-content" style="padding:24px 28px 28px;">
-                            <span style="display:inline-block;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;padding:4px 12px;border-radius:999px;background:var(--bg-alt);color:var(--indigo);margin-bottom:12px;">School</span>
-                            <h3 style="font-size:1.2rem;margin-bottom:8px;">School Management System</h3>
-                            <p style="color:var(--ink-soft);font-size:0.95rem;margin-bottom:14px;">Admissions, fee vouchers, attendance tracking, exam results, and staff payroll for a K-12 school with 800+ students.</p>
-                            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;">
-                                <span style="font-size:0.75rem;padding:3px 10px;border-radius:999px;background:var(--bg-alt);color:var(--ink-soft);">PHP</span>
-                                <span style="font-size:0.75rem;padding:3px 10px;border-radius:999px;background:var(--bg-alt);color:var(--ink-soft);">MySQL</span>
-                                <span style="font-size:0.75rem;padding:3px 10px;border-radius:999px;background:var(--bg-alt);color:var(--ink-soft);">Admissions</span>
-                                <span style="font-size:0.75rem;padding:3px 10px;border-radius:999px;background:var(--bg-alt);color:var(--ink-soft);">Payroll</span>
-                            </div>
-                            <a href="#contact" class="btn btn-primary" style="padding:10px 20px;font-size:0.85rem;background:var(--indigo);color:#fff;box-shadow:none;">View project →</a>
+                        <figcaption>Sample department view</figcaption>
+                    </figure>
+                </div>
+                <!-- Restaurant Panel -->
+                <div class="tab-panel" id="panel-restaurant" role="tabpanel">
+                    <div class="tab-panel-copy">
+                        <h3>Restaurant POS &amp; Management</h3>
+                        <p>Point-of-sale for the counter, kitchen order tickets, table management and stock control, with daily sales reports that close out in minutes.</p>
+                        <ul><li>POS &amp; billing</li><li>Kitchen order tickets</li><li>Table &amp; reservation view</li><li>Stock &amp; wastage tracking</li></ul>
+                    </div>
+                    <figure class="tab-panel-shot">
+                        <div style="background:linear-gradient(145deg,#f5ece8,#eed5d0);border-radius:var(--radius-md);border:2px dashed var(--line);padding:60px 20px;text-align:center;min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+                            <div style="font-size:3rem;margin-bottom:12px;">🍽️</div>
+                            <div style="font-size:0.85rem;color:var(--ink-soft);font-weight:500;">Restaurant POS Dashboard</div>
+                            <div style="font-size:0.75rem;color:var(--ink-soft);opacity:0.6;margin-top:4px;">Upload landscape image (1200×630px)</div>
                         </div>
-                    </article>
-
-                    <!-- Project 3: College ERP -->
-                    <article class="project-card" style="background:var(--card);border-radius:var(--radius-lg);border:1px solid var(--line);overflow:hidden;transition:transform .25s ease,box-shadow .25s ease;">
-                        <div class="project-visual" style="background:linear-gradient(145deg,#1A7A5A,#1FA37D);padding:20px;min-height:200px;display:flex;align-items:center;justify-content:center;">
-                            <svg viewBox="0 0 400 200" width="100%" height="100%" style="max-height:180px;">
-                                <rect width="400" height="200" rx="8" fill="#1A7A5A"/>
-                                <rect x="0" y="0" width="400" height="28" rx="8" fill="#145F46"/>
-                                <rect x="0" y="18" width="400" height="10" fill="#145F46"/>
-                                <circle cx="20" cy="14" r="4" fill="#FF5F56" opacity="0.7"/>
-                                <circle cx="34" cy="14" r="4" fill="#FFBD2E" opacity="0.7"/>
-                                <circle cx="48" cy="14" r="4" fill="#27C93F" opacity="0.7"/>
-                                <rect x="70" y="10" width="100" height="8" rx="2" fill="rgba(255,255,255,0.12)"/>
-                                <!-- dept cards -->
-                                <rect x="16" y="44" width="114" height="72" rx="4" fill="rgba(255,255,255,0.06)"/>
-                                <rect x="28" y="56" width="50" height="8" rx="2" fill="rgba(255,255,255,0.20)"/>
-                                <rect x="28" y="70" width="80" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="28" y="82" width="70" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="28" y="94" width="60" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="140" y="44" width="114" height="72" rx="4" fill="rgba(255,255,255,0.06)"/>
-                                <rect x="152" y="56" width="50" height="8" rx="2" fill="rgba(255,255,255,0.20)"/>
-                                <rect x="152" y="70" width="80" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="152" y="82" width="70" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="152" y="94" width="60" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="264" y="44" width="114" height="72" rx="4" fill="rgba(255,255,255,0.06)"/>
-                                <rect x="276" y="56" width="50" height="8" rx="2" fill="rgba(255,255,255,0.20)"/>
-                                <rect x="276" y="70" width="80" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="276" y="82" width="70" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="276" y="94" width="60" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <!-- footer -->
-                                <rect x="16" y="128" width="362" height="52" rx="4" fill="rgba(255,255,255,0.04)"/>
-                                <rect x="28" y="140" width="200" height="6" rx="2" fill="rgba(255,255,255,0.12)"/>
-                                <rect x="28" y="154" width="160" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="28" y="166" width="140" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                            </svg>
+                        <figcaption>Sample POS overview</figcaption>
+                    </figure>
+                </div>
+                <!-- Super Mart Panel -->
+                <div class="tab-panel" id="panel-mart" role="tabpanel">
+                    <div class="tab-panel-copy">
+                        <h3>Super Mart Software</h3>
+                        <p>Barcode-driven billing, multi-branch inventory, supplier ledgers and low-stock alerts, built for the pace of a busy checkout counter.</p>
+                        <ul><li>Barcode billing</li><li>Multi-branch inventory</li><li>Supplier ledgers</li><li>Low-stock alerts</li></ul>
+                    </div>
+                    <figure class="tab-panel-shot">
+                        <div style="background:linear-gradient(145deg,#f5f0e8,#eeddc5);border-radius:var(--radius-md);border:2px dashed var(--line);padding:60px 20px;text-align:center;min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+                            <div style="font-size:3rem;margin-bottom:12px;">🛒</div>
+                            <div style="font-size:0.85rem;color:var(--ink-soft);font-weight:500;">Super Mart Dashboard</div>
+                            <div style="font-size:0.75rem;color:var(--ink-soft);opacity:0.6;margin-top:4px;">Upload landscape image (1200×630px)</div>
                         </div>
-                        <div class="project-content" style="padding:24px 28px 28px;">
-                            <span style="display:inline-block;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;padding:4px 12px;border-radius:999px;background:var(--bg-alt);color:var(--indigo);margin-bottom:12px;">College</span>
-                            <h3 style="font-size:1.2rem;margin-bottom:8px;">College ERP System</h3>
-                            <p style="color:var(--ink-soft);font-size:0.95rem;margin-bottom:14px;">Multi-department structure, semester-wise fees, faculty scheduling, transcript generation, and multi-campus support.</p>
-                            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;">
-                                <span style="font-size:0.75rem;padding:3px 10px;border-radius:999px;background:var(--bg-alt);color:var(--ink-soft);">PHP</span>
-                                <span style="font-size:0.75rem;padding:3px 10px;border-radius:999px;background:var(--bg-alt);color:var(--ink-soft);">MySQL</span>
-                                <span style="font-size:0.75rem;padding:3px 10px;border-radius:999px;background:var(--bg-alt);color:var(--ink-soft);">Transcripts</span>
-                                <span style="font-size:0.75rem;padding:3px 10px;border-radius:999px;background:var(--bg-alt);color:var(--ink-soft);">Multi-campus</span>
-                            </div>
-                            <a href="#contact" class="btn btn-primary" style="padding:10px 20px;font-size:0.85rem;background:var(--indigo);color:#fff;box-shadow:none;">View project →</a>
-                        </div>
-                    </article>
-
-                    <!-- Project 4: Restaurant POS -->
-                    <article class="project-card" style="background:var(--card);border-radius:var(--radius-lg);border:1px solid var(--line);overflow:hidden;transition:transform .25s ease,box-shadow .25s ease;">
-                        <div class="project-visual" style="background:linear-gradient(145deg,#1A4B7A,#3A7BD5);padding:20px;min-height:200px;display:flex;align-items:center;justify-content:center;">
-                            <svg viewBox="0 0 400 200" width="100%" height="100%" style="max-height:180px;">
-                                <rect width="400" height="200" rx="8" fill="#1A4B7A"/>
-                                <rect x="0" y="0" width="400" height="28" rx="8" fill="#123A5E"/>
-                                <rect x="0" y="18" width="400" height="10" fill="#123A5E"/>
-                                <circle cx="20" cy="14" r="4" fill="#FF5F56" opacity="0.7"/>
-                                <circle cx="34" cy="14" r="4" fill="#FFBD2E" opacity="0.7"/>
-                                <circle cx="48" cy="14" r="4" fill="#27C93F" opacity="0.7"/>
-                                <rect x="70" y="10" width="100" height="8" rx="2" fill="rgba(255,255,255,0.12)"/>
-                                <text x="320" y="18" font-size="9" fill="rgba(255,255,255,0.30)" font-family="Inter,sans-serif">#1042</text>
-                                <!-- order panel -->
-                                <rect x="16" y="44" width="230" height="136" rx="4" fill="rgba(255,255,255,0.05)"/>
-                                <rect x="28" y="56" width="206" height="28" rx="3" fill="rgba(255,255,255,0.06)"/>
-                                <text x="40" y="74" font-size="9" fill="rgba(255,255,255,0.60)" font-family="Inter,sans-serif" font-weight="600">Table 4 · 2 guests</text>
-                                <text x="40" y="84" font-size="7" fill="rgba(255,255,255,0.30)" font-family="Inter,sans-serif">15:24 · Server: Ali</text>
-                                <rect x="28" y="90" width="206" height="18" rx="2" fill="rgba(255,255,255,0.03)"/>
-                                <text x="40" y="103" font-size="8" fill="rgba(255,255,255,0.50)" font-family="Inter,sans-serif">Grilled Chicken</text>
-                                <text x="210" y="103" font-size="8" fill="rgba(255,255,255,0.40)" font-family="Inter,sans-serif">$18.50</text>
-                                <rect x="28" y="110" width="206" height="18" rx="2" fill="rgba(255,255,255,0.03)"/>
-                                <text x="40" y="123" font-size="8" fill="rgba(255,255,255,0.50)" font-family="Inter,sans-serif">Pasta Alfredo</text>
-                                <text x="210" y="123" font-size="8" fill="rgba(255,255,255,0.40)" font-family="Inter,sans-serif">$14.00</text>
-                                <rect x="28" y="130" width="206" height="18" rx="2" fill="rgba(255,255,255,0.03)"/>
-                                <text x="40" y="143" font-size="8" fill="rgba(255,255,255,0.50)" font-family="Inter,sans-serif">Fresh Juice</text>
-                                <text x="210" y="143" font-size="8" fill="rgba(255,255,255,0.40)" font-family="Inter,sans-serif">$6.00</text>
-                                <rect x="28" y="150" width="206" height="18" rx="2" fill="rgba(255,255,255,0.03)"/>
-                                <text x="40" y="163" font-size="8" fill="rgba(255,255,255,0.50)" font-family="Inter,sans-serif">Garlic Bread</text>
-                                <text x="210" y="163" font-size="8" fill="rgba(255,255,255,0.40)" font-family="Inter,sans-serif">$4.50</text>
-                                <!-- right panel: ticket -->
-                                <rect x="260" y="44" width="124" height="136" rx="4" fill="rgba(255,255,255,0.04)"/>
-                                <text x="322" y="62" font-size="8" fill="rgba(255,255,255,0.30)" text-anchor="middle" font-family="Inter,sans-serif" font-weight="600">KITCHEN TICKET</text>
-                                <rect x="272" y="72" width="100" height="1" fill="rgba(255,255,255,0.06)"/>
-                                <text x="272" y="86" font-size="7" fill="rgba(255,255,255,0.40)" font-family="Inter,sans-serif">• Grilled Chicken</text>
-                                <text x="272" y="100" font-size="7" fill="rgba(255,255,255,0.40)" font-family="Inter,sans-serif">• Pasta Alfredo</text>
-                                <text x="272" y="114" font-size="7" fill="rgba(255,255,255,0.40)" font-family="Inter,sans-serif">• Garlic Bread</text>
-                                <rect x="272" y="126" width="100" height="1" fill="rgba(255,255,255,0.06)"/>
-                                <rect x="272" y="138" width="100" height="20" rx="3" fill="rgba(255,182,72,0.15)"/>
-                                <text x="322" y="152" font-size="8" fill="#FFB648" text-anchor="middle" font-family="Inter,sans-serif" font-weight="600">⏱ 12 min</text>
-                            </svg>
-                        </div>
-                        <div class="project-content" style="padding:24px 28px 28px;">
-                            <span style="display:inline-block;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;padding:4px 12px;border-radius:999px;background:var(--bg-alt);color:var(--indigo);margin-bottom:12px;">Restaurant</span>
-                            <h3 style="font-size:1.2rem;margin-bottom:8px;">Restaurant POS System</h3>
-                            <p style="color:var(--ink-soft);font-size:0.95rem;margin-bottom:14px;">Point-of-sale with kitchen order tickets, table management, stock tracking, and daily sales reports for a busy restaurant.</p>
-                            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;">
-                                <span style="font-size:0.75rem;padding:3px 10px;border-radius:999px;background:var(--bg-alt);color:var(--ink-soft);">PHP</span>
-                                <span style="font-size:0.75rem;padding:3px 10px;border-radius:999px;background:var(--bg-alt);color:var(--ink-soft);">MySQL</span>
-                                <span style="font-size:0.75rem;padding:3px 10px;border-radius:999px;background:var(--bg-alt);color:var(--ink-soft);">POS</span>
-                                <span style="font-size:0.75rem;padding:3px 10px;border-radius:999px;background:var(--bg-alt);color:var(--ink-soft);">Kitchen Display</span>
-                            </div>
-                            <a href="#contact" class="btn btn-primary" style="padding:10px 20px;font-size:0.85rem;background:var(--indigo);color:#fff;box-shadow:none;">View project →</a>
-                        </div>
-                    </article>
-
-                    <!-- Project 5: Super Mart Software -->
-                    <article class="project-card" style="background:var(--card);border-radius:var(--radius-lg);border:1px solid var(--line);overflow:hidden;transition:transform .25s ease,box-shadow .25s ease;">
-                        <div class="project-visual" style="background:linear-gradient(145deg,#7A4B1A,#D59B3A);padding:20px;min-height:200px;display:flex;align-items:center;justify-content:center;">
-                            <svg viewBox="0 0 400 200" width="100%" height="100%" style="max-height:180px;">
-                                <rect width="400" height="200" rx="8" fill="#7A4B1A"/>
-                                <rect x="0" y="0" width="400" height="28" rx="8" fill="#5E3A14"/>
-                                <rect x="0" y="18" width="400" height="10" fill="#5E3A14"/>
-                                <circle cx="20" cy="14" r="4" fill="#FF5F56" opacity="0.7"/>
-                                <circle cx="34" cy="14" r="4" fill="#FFBD2E" opacity="0.7"/>
-                                <circle cx="48" cy="14" r="4" fill="#27C93F" opacity="0.7"/>
-                                <rect x="70" y="10" width="100" height="8" rx="2" fill="rgba(255,255,255,0.12)"/>
-                                <text x="320" y="18" font-size="9" fill="rgba(255,255,255,0.30)" font-family="Inter,sans-serif">Store #3</text>
-                                <!-- inventory grid -->
-                                <rect x="16" y="44" width="84" height="72" rx="4" fill="rgba(255,255,255,0.06)"/>
-                                <rect x="28" y="56" width="60" height="8" rx="2" fill="rgba(255,255,255,0.20)"/>
-                                <rect x="28" y="70" width="40" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="28" y="82" width="55" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="28" y="94" width="45" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="110" y="44" width="84" height="72" rx="4" fill="rgba(255,255,255,0.06)"/>
-                                <rect x="122" y="56" width="60" height="8" rx="2" fill="rgba(255,255,255,0.20)"/>
-                                <rect x="122" y="70" width="40" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="122" y="82" width="55" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="122" y="94" width="45" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="204" y="44" width="84" height="72" rx="4" fill="rgba(255,255,255,0.06)"/>
-                                <rect x="216" y="56" width="60" height="8" rx="2" fill="rgba(255,255,255,0.20)"/>
-                                <rect x="216" y="70" width="40" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="216" y="82" width="55" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="216" y="94" width="45" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="298" y="44" width="84" height="72" rx="4" fill="rgba(255,255,255,0.06)"/>
-                                <rect x="310" y="56" width="60" height="8" rx="2" fill="rgba(255,255,255,0.20)"/>
-                                <rect x="310" y="70" width="40" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="310" y="82" width="55" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="310" y="94" width="45" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <!-- bottom -->
-                                <rect x="16" y="128" width="362" height="52" rx="4" fill="rgba(255,255,255,0.04)"/>
-                                <rect x="28" y="140" width="160" height="6" rx="2" fill="rgba(255,255,255,0.12)"/>
-                                <rect x="28" y="154" width="120" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="28" y="166" width="140" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="280" y="140" width="86" height="28" rx="3" fill="rgba(255,182,72,0.20)"/>
-                                <text x="323" y="158" font-size="8" fill="#FFB648" text-anchor="middle" font-family="Inter,sans-serif" font-weight="600">LOW STOCK</text>
-                            </svg>
-                        </div>
-                        <div class="project-content" style="padding:24px 28px 28px;">
-                            <span style="display:inline-block;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;padding:4px 12px;border-radius:999px;background:var(--bg-alt);color:var(--indigo);margin-bottom:12px;">Super Mart</span>
-                            <h3 style="font-size:1.2rem;margin-bottom:8px;">Super Mart Management</h3>
-                            <p style="color:var(--ink-soft);font-size:0.95rem;margin-bottom:14px;">Barcode billing, multi-branch inventory, supplier ledgers, and low-stock alerts for a retail chain with 5 branches.</p>
-                            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;">
-                                <span style="font-size:0.75rem;padding:3px 10px;border-radius:999px;background:var(--bg-alt);color:var(--ink-soft);">PHP</span>
-                                <span style="font-size:0.75rem;padding:3px 10px;border-radius:999px;background:var(--bg-alt);color:var(--ink-soft);">MySQL</span>
-                                <span style="font-size:0.75rem;padding:3px 10px;border-radius:999px;background:var(--bg-alt);color:var(--ink-soft);">Barcode</span>
-                                <span style="font-size:0.75rem;padding:3px 10px;border-radius:999px;background:var(--bg-alt);color:var(--ink-soft);">Multi-branch</span>
-                            </div>
-                            <a href="#contact" class="btn btn-primary" style="padding:10px 20px;font-size:0.85rem;background:var(--indigo);color:#fff;box-shadow:none;">View project →</a>
-                        </div>
-                    </article>
-
-                    <!-- Project 6: Website Development -->
-                    <article class="project-card" style="background:var(--card);border-radius:var(--radius-lg);border:1px solid var(--line);overflow:hidden;transition:transform .25s ease,box-shadow .25s ease;">
-                        <div class="project-visual" style="background:linear-gradient(145deg,#1A3A5C,#4A7AB5);padding:20px;min-height:200px;display:flex;align-items:center;justify-content:center;">
-                            <svg viewBox="0 0 400 200" width="100%" height="100%" style="max-height:180px;">
-                                <rect width="400" height="200" rx="8" fill="#1A3A5C"/>
-                                <rect x="0" y="0" width="400" height="28" rx="8" fill="#122A44"/>
-                                <rect x="0" y="18" width="400" height="10" fill="#122A44"/>
-                                <circle cx="20" cy="14" r="4" fill="#FF5F56" opacity="0.7"/>
-                                <circle cx="34" cy="14" r="4" fill="#FFBD2E" opacity="0.7"/>
-                                <circle cx="48" cy="14" r="4" fill="#27C93F" opacity="0.7"/>
-                                <rect x="70" y="10" width="120" height="8" rx="2" fill="rgba(255,255,255,0.12)"/>
-                                <text x="350" y="18" font-size="9" fill="rgba(255,255,255,0.30)" font-family="Inter,sans-serif">wordpress</text>
-                                <!-- hero -->
-                                <rect x="16" y="44" width="180" height="80" rx="4" fill="rgba(255,255,255,0.05)"/>
-                                <rect x="28" y="56" width="100" height="10" rx="2" fill="rgba(255,255,255,0.20)"/>
-                                <rect x="28" y="74" width="150" height="6" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="28" y="86" width="130" height="6" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="28" y="98" width="110" height="6" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="28" y="112" width="80" height="14" rx="3" fill="rgba(255,182,72,0.20)"/>
-                                <!-- mock screen -->
-                                <rect x="210" y="44" width="170" height="80" rx="4" fill="rgba(255,255,255,0.04)"/>
-                                <rect x="222" y="56" width="146" height="8" rx="2" fill="rgba(255,255,255,0.08)"/>
-                                <rect x="222" y="70" width="100" height="6" rx="2" fill="rgba(255,255,255,0.06)"/>
-                                <rect x="222" y="82" width="120" height="6" rx="2" fill="rgba(255,255,255,0.06)"/>
-                                <rect x="222" y="94" width="80" height="6" rx="2" fill="rgba(255,255,255,0.06)"/>
-                                <rect x="222" y="106" width="110" height="6" rx="2" fill="rgba(255,255,255,0.06)"/>
-                                <!-- footer -->
-                                <rect x="16" y="136" width="362" height="44" rx="4" fill="rgba(255,255,255,0.03)"/>
-                                <rect x="28" y="148" width="80" height="8" rx="2" fill="rgba(255,255,255,0.06)"/>
-                                <rect x="120" y="148" width="60" height="8" rx="2" fill="rgba(255,255,255,0.06)"/>
-                                <rect x="192" y="148" width="60" height="8" rx="2" fill="rgba(255,255,255,0.06)"/>
-                            </svg>
-                        </div>
-                        <div class="project-content" style="padding:24px 28px 28px;">
-                            <span style="display:inline-block;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;padding:4px 12px;border-radius:999px;background:var(--bg-alt);color:var(--indigo);margin-bottom:12px;">Web</span>
-                            <h3 style="font-size:1.2rem;margin-bottom:8px;">WordPress &amp; HTML Websites</h3>
-                            <p style="color:var(--ink-soft);font-size:0.95rem;margin-bottom:14px;">Marketing sites, admissions pages, restaurant menus, and storefronts — WordPress for self-editing, hand-coded HTML for speed.</p>
-                            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;">
-                                <span style="font-size:0.75rem;padding:3px 10px;border-radius:999px;background:var(--bg-alt);color:var(--ink-soft);">WordPress</span>
-                                <span style="font-size:0.75rem;padding:3px 10px;border-radius:999px;background:var(--bg-alt);color:var(--ink-soft);">HTML</span>
-                                <span style="font-size:0.75rem;padding:3px 10px;border-radius:999px;background:var(--bg-alt);color:var(--ink-soft);">CSS</span>
-                                <span style="font-size:0.75rem;padding:3px 10px;border-radius:999px;background:var(--bg-alt);color:var(--ink-soft);">Responsive</span>
-                            </div>
-                            <a href="#contact" class="btn btn-primary" style="padding:10px 20px;font-size:0.85rem;background:var(--indigo);color:#fff;box-shadow:none;">View project →</a>
-                        </div>
-                    </article>
-
+                        <figcaption>Sample inventory overview</figcaption>
+                    </figure>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+
+        <!-- 7. WORK / PROJECT GALLERY - IMAGE PLACEHOLDERS -->
+<section class="section work" id="work">
+    <div class="wrap">
+        <div class="section-head">
+            <h2>Not our first system</h2>
+            <p>We've built ERP and CRM software across NGOs, schools, colleges, restaurants and super marts, plus a long list of WordPress and HTML web applications on the side. Every build starts the same way — with a demo you can click through.</p>
+        </div>
+        <div class="gallery">
+            <figure class="gallery-item">
+                <div style="background:linear-gradient(145deg,#2B2680,#4C3FD6);border-radius:16px;overflow:hidden;border:2px solid var(--line);min-height:240px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;color:#fff;">
+                    <div style="font-size:3.5rem;margin-bottom:12px;">📊</div>
+                    <div style="font-size:1rem;font-weight:600;opacity:0.9;">ERP Dashboard</div>
+                    <div style="font-size:0.8rem;opacity:0.5;margin-top:4px;">Upload landscape image (640×420px)</div>
+                </div>
+                <figcaption><h3>ERP Dashboard</h3><p>Modules, staff roles &amp; reports</p></figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <div style="background:linear-gradient(145deg,#3730A9,#6D5EF5);border-radius:16px;overflow:hidden;border:2px solid var(--line);min-height:240px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;color:#fff;">
+                    <div style="font-size:3.5rem;margin-bottom:12px;">📋</div>
+                    <div style="font-size:1rem;font-weight:600;opacity:0.9;">CRM Pipeline</div>
+                    <div style="font-size:0.8rem;opacity:0.5;margin-top:4px;">Upload landscape image (640×420px)</div>
+                </div>
+                <figcaption><h3>CRM Pipeline</h3><p>Leads, follow-ups &amp; donors</p></figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <div style="background:linear-gradient(145deg,#1A7A5A,#1FA37D);border-radius:16px;overflow:hidden;border:2px solid var(--line);min-height:240px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;color:#fff;">
+                    <div style="font-size:3.5rem;margin-bottom:12px;">🧾</div>
+                    <div style="font-size:1rem;font-weight:600;opacity:0.9;">POS Billing</div>
+                    <div style="font-size:0.8rem;opacity:0.5;margin-top:4px;">Upload landscape image (640×420px)</div>
+                </div>
+                <figcaption><h3>POS Billing</h3><p>Counter checkout &amp; tickets</p></figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <div style="background:linear-gradient(145deg,#1A4B7A,#3A7BD5);border-radius:16px;overflow:hidden;border:2px solid var(--line);min-height:240px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;color:#fff;">
+                    <div style="font-size:3.5rem;margin-bottom:12px;">🌐</div>
+                    <div style="font-size:1rem;font-weight:600;opacity:0.9;">Website Build</div>
+                    <div style="font-size:0.8rem;opacity:0.5;margin-top:4px;">Upload landscape image (640×420px)</div>
+                </div>
+                <figcaption><h3>Website Build</h3><p>WordPress &amp; HTML delivery</p></figcaption>
+            </figure>
+        </div>
+        <div class="work-badges">
+            <span>15+ modules per ERP build</span>
+            <span>Role-based staff access</span>
+            <span>Custom reporting</span>
+            <span>Many web apps delivered</span>
+        </div>
+        <div style="text-align:center;margin-top:48px;">
+            <a href="projects.html" class="btn btn-primary" style="background:var(--indigo);color:#fff;box-shadow:0 6px 18px rgba(55,48,169,0.30);">View all projects →</a>
+        </div>
+    </div>
+</section>
 
         <!-- CTA SECTION -->
         <section class="section demo-promise" style="padding:70px 0;">
