@@ -1,0 +1,6 @@
+# User-agent configuration
+User-agent: *
+Allow: /
+
+# Sitemap URL
+Sitemap: https://indigosoftware.online/sitemap.xml
