@@ -46,6 +46,261 @@
             "telephone": "+92-340-2324446"
         }
     </script>
+
+    <style>
+        /* ===== PAGE HEADER STYLES ===== */
+        .page-header {
+            position: relative;
+            background: linear-gradient(145deg, var(--indigo-deep) 0%, var(--indigo) 50%, var(--violet) 100%);
+            padding: 80px 0 70px;
+            overflow: hidden;
+            margin-top: calc(-1 * (var(--header-height, 68px) + var(--header-top-offset, 12px)));
+            padding-top: calc(var(--header-height, 68px) + var(--header-top-offset, 12px) + 60px);
+        }
+
+        .page-header::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(255,182,72,0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(109,94,245,0.12) 0%, transparent 40%),
+                radial-gradient(circle at 60% 80%, rgba(31,163,125,0.06) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .page-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--amber), var(--violet), var(--teal));
+            opacity: 0.6;
+        }
+
+        .page-header .wrap {
+            position: relative;
+            z-index: 2;
+        }
+
+        .page-header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .page-header-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.10);
+            border: 1px solid rgba(255,255,255,0.15);
+            padding: 6px 18px 6px 14px;
+            border-radius: 999px;
+            color: rgba(255,255,255,0.75);
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+            backdrop-filter: blur(8px);
+        }
+
+        .page-header-badge .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--amber);
+            animation: pulse-dot 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.8); }
+        }
+
+        .page-header h1 {
+            color: #fff;
+            font-size: clamp(2.6rem, 5vw, 4rem);
+            font-weight: 700;
+            line-height: 1.08;
+            margin-bottom: 18px;
+            letter-spacing: -0.02em;
+        }
+
+        .page-header h1 .highlight {
+            background: linear-gradient(135deg, var(--amber), #FFD700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .page-header p {
+            color: rgba(255,255,255,0.82);
+            font-size: 1.15rem;
+            max-width: 620px;
+            line-height: 1.6;
+            margin-bottom: 32px;
+        }
+
+        .page-header-stats {
+            display: flex;
+            gap: 48px;
+            padding-top: 32px;
+            border-top: 1px solid rgba(255,255,255,0.12);
+        }
+
+        .page-header-stats .stat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page-header-stats .stat-number {
+            font-family: var(--serif);
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--amber);
+            line-height: 1;
+        }
+
+        .page-header-stats .stat-label {
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.6);
+            margin-top: 6px;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+
+        .page-header-actions {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+
+        .page-header-actions .btn {
+            padding: 14px 32px;
+            font-size: 0.95rem;
+        }
+
+        .page-header-actions .btn-ghost {
+            color: #fff;
+            border-color: rgba(255,255,255,0.3);
+        }
+
+        .page-header-actions .btn-ghost:hover {
+            border-color: #fff;
+            background: rgba(255,255,255,0.05);
+        }
+
+        /* Decorative floating shapes */
+        .page-header-shapes {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .page-header-shapes .shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.06;
+        }
+
+        .page-header-shapes .shape-1 {
+            width: 400px;
+            height: 400px;
+            background: var(--amber);
+            top: -200px;
+            right: -100px;
+        }
+
+        .page-header-shapes .shape-2 {
+            width: 300px;
+            height: 300px;
+            background: var(--violet);
+            bottom: -150px;
+            left: -100px;
+        }
+
+        .page-header-shapes .shape-3 {
+            width: 150px;
+            height: 150px;
+            background: var(--teal);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Responsive */
+        @media (max-width: 760px) {
+            .page-header {
+                padding: 60px 0 50px;
+                padding-top: calc(var(--header-height, 58px) + var(--header-top-offset, 8px) + 40px);
+            }
+
+            .page-header-stats {
+                gap: 24px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .page-header-stats .stat-number {
+                font-size: 1.6rem;
+            }
+
+            .page-header-actions .btn {
+                padding: 12px 24px;
+                font-size: 0.88rem;
+            }
+
+            .page-header h1 {
+                font-size: clamp(2rem, 7vw, 2.6rem);
+            }
+
+            .page-header p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-header {
+                padding: 40px 0 36px;
+                padding-top: calc(var(--header-height, 52px) + var(--header-top-offset, 6px) + 30px);
+            }
+
+            .page-header-stats {
+                gap: 16px;
+            }
+
+            .page-header-stats .stat-number {
+                font-size: 1.3rem;
+            }
+
+            .page-header-stats .stat-label {
+                font-size: 0.7rem;
+            }
+
+            .page-header-actions {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
+            .page-header-actions .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -56,144 +311,175 @@
 
     <main id="top">
 
-        <!-- PAGE HEADER -->
-        <section class="section" style="padding:60px 0 40px;background:var(--bg-alt);">
+        <!-- ===== STYLISH PAGE HEADER ===== -->
+        <header class="page-header">
+            <div class="page-header-shapes" aria-hidden="true">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
             <div class="wrap">
-                <div class="section-head" style="max-width:100%;">
-                    <h1 style="font-size:clamp(2.2rem, 4vw, 3.2rem);">Our Software Projects</h1>
-                    <p style="font-size:1.15rem;max-width:640px;">Every system is custom-built in PHP &amp; MySQL, tailored to how your organization actually works. Here are some of the projects we've delivered.</p>
+                <div class="page-header-content">
+                    <div class="page-header-badge">
+                        <span class="dot"></span>
+                        Portfolio Showcase
+                    </div>
+                    <h1>
+                        Our <span class="highlight">Software</span> Projects
+                    </h1>
+                    <p>
+                        Every system is custom-built in PHP &amp; MySQL, tailored to how your organization actually works. Here are some of the projects we've delivered across industries.
+                    </p>
+                    <div class="page-header-actions">
+                        <a href="#work" class="btn btn-primary">Explore projects</a>
+                        <a href="index.html#contact" class="btn btn-ghost">Start your project</a>
+                    </div>
+                    <div class="page-header-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Industries Served</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Custom Code</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Delivered</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- 4. INDUSTRIES (interactive tabs) - MOBILE COMPATIBLE -->
+        <section class="section industries" id="industries">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>One system, shaped four different ways</h2>
+                    <p>Tap an industry to see what the software actually handles.</p>
+                </div>
+                <div class="tabs" id="industryTabs">
+                    <!-- Tab buttons - horizontally scrollable on mobile -->
+                    <div class="tab-buttons" role="tablist" style="overflow-x:auto;overflow-y:hidden;white-space:nowrap;display:flex;flex-wrap:nowrap;gap:8px;padding:4px 0 12px;scrollbar-width:thin;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;">
+                        <button class="tab-btn is-active" role="tab" aria-selected="true" data-tab="school" style="flex:0 0 auto;">Schools</button>
+                        <button class="tab-btn" role="tab" aria-selected="false" data-tab="college" style="flex:0 0 auto;">Colleges</button>
+                        <button class="tab-btn" role="tab" aria-selected="false" data-tab="restaurant" style="flex:0 0 auto;">Restaurants</button>
+                        <button class="tab-btn" role="tab" aria-selected="false" data-tab="mart" style="flex:0 0 auto;">Super Marts</button>
+                    </div>
+                    <div class="tab-panels">
+                        <!-- School Panel (Active by default) -->
+                        <div class="tab-panel is-active" id="panel-school" role="tabpanel">
+                            <div class="tab-panel-copy">
+                                <h3>School Management</h3>
+                                <p>Admissions, fee vouchers, attendance, exam results and staff payroll in one place, so front-desk staff and management are always looking at the same numbers.</p>
+                                <ul><li>Admissions &amp; enrollment</li><li>Fee vouchers &amp; ledgers</li><li>Attendance &amp; result cards</li><li>Staff payroll</li></ul>
+                            </div>
+                            <figure class="tab-panel-shot">
+                                <img src="school-management-software.webp" alt="School fee and attendance management dashboard" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;border-radius:var(--radius-md);border:1px solid var(--line);">
+                                <figcaption>Sample admissions overview</figcaption>
+                            </figure>
+                        </div>
+                        <!-- College Panel -->
+                        <div class="tab-panel" id="panel-college" role="tabpanel">
+                            <div class="tab-panel-copy">
+                                <h3>College ERP</h3>
+                                <p>Everything a school system needs, scaled up — multiple departments, semester-wise fee structures, faculty scheduling and transcript generation.</p>
+                                <ul><li>Department &amp; semester structure</li><li>Faculty scheduling</li><li>Transcript &amp; GPA records</li><li>Multi-campus support</li></ul>
+                            </div>
+                            <figure class="tab-panel-shot">
+                                <img src="college-management-software.webp" alt="College ERP department and semester overview" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;border-radius:var(--radius-md);border:1px solid var(--line);">
+                                <figcaption>Sample department view</figcaption>
+                            </figure>
+                        </div>
+                        <!-- Restaurant Panel -->
+                        <div class="tab-panel" id="panel-restaurant" role="tabpanel">
+                            <div class="tab-panel-copy">
+                                <h3>Restaurant POS &amp; Management</h3>
+                                <p>Point-of-sale for the counter, kitchen order tickets, table management and stock control, with daily sales reports that close out in minutes.</p>
+                                <ul><li>POS &amp; billing</li><li>Kitchen order tickets</li><li>Table &amp; reservation view</li><li>Stock &amp; wastage tracking</li></ul>
+                            </div>
+                            <figure class="tab-panel-shot">
+                                <img src="restaurant-dashboard.webp" alt="Restaurant point-of-sale and daily sales dashboard" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;border-radius:var(--radius-md);border:1px solid var(--line);">
+                                <figcaption>Sample POS overview</figcaption>
+                            </figure>
+                        </div>
+                        <!-- Super Mart Panel -->
+                        <div class="tab-panel" id="panel-mart" role="tabpanel">
+                            <div class="tab-panel-copy">
+                                <h3>Super Mart Software</h3>
+                                <p>Barcode-driven billing, multi-branch inventory, supplier ledgers and low-stock alerts, built for the pace of a busy checkout counter.</p>
+                                <ul><li>Barcode billing</li><li>Multi-branch inventory</li><li>Supplier ledgers</li><li>Low-stock alerts</li></ul>
+                            </div>
+                            <figure class="tab-panel-shot">
+                                <img src="supermart-software.webp" alt="Super mart multi-branch inventory dashboard" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;border-radius:var(--radius-md);border:1px solid var(--line);">
+                                <figcaption>Sample inventory overview</figcaption>
+                            </figure>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-      <!-- 4. INDUSTRIES (interactive tabs) - MOBILE COMPATIBLE -->
-<section class="section industries" id="industries">
-    <div class="wrap">
-        <div class="section-head">
-            <h2>One system, shaped four different ways</h2>
-            <p>Tap an industry to see what the software actually handles.</p>
-        </div>
-        <div class="tabs" id="industryTabs">
-            <!-- Tab buttons - horizontally scrollable on mobile -->
-            <div class="tab-buttons" role="tablist" style="overflow-x:auto;overflow-y:hidden;white-space:nowrap;display:flex;flex-wrap:nowrap;gap:8px;padding:4px 0 12px;scrollbar-width:thin;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;">
-                <button class="tab-btn is-active" role="tab" aria-selected="true" data-tab="school" style="flex:0 0 auto;">Schools</button>
-                <button class="tab-btn" role="tab" aria-selected="false" data-tab="college" style="flex:0 0 auto;">Colleges</button>
-                <button class="tab-btn" role="tab" aria-selected="false" data-tab="restaurant" style="flex:0 0 auto;">Restaurants</button>
-                <button class="tab-btn" role="tab" aria-selected="false" data-tab="mart" style="flex:0 0 auto;">Super Marts</button>
-            </div>
-            <div class="tab-panels">
-                <!-- School Panel (Active by default) -->
-                <div class="tab-panel is-active" id="panel-school" role="tabpanel">
-                    <div class="tab-panel-copy">
-                        <h3>School Management</h3>
-                        <p>Admissions, fee vouchers, attendance, exam results and staff payroll in one place, so front-desk staff and management are always looking at the same numbers.</p>
-                        <ul><li>Admissions &amp; enrollment</li><li>Fee vouchers &amp; ledgers</li><li>Attendance &amp; result cards</li><li>Staff payroll</li></ul>
-                    </div>
-                    <figure class="tab-panel-shot">
-                        <img src="school-management-software.webp" alt="School fee and attendance management dashboard" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;border-radius:var(--radius-md);border:1px solid var(--line);">
-                        <figcaption>Sample admissions overview</figcaption>
+        <!-- 7. WORK / PROJECT GALLERY -->
+        <section class="section work" id="work">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Not our first system</h2>
+                    <p>We've built ERP and CRM software across NGOs, schools, colleges, restaurants and super marts, plus a long list of WordPress and HTML web applications on the side. Every build starts the same way — with a demo you can click through.</p>
+                </div>
+                <div class="gallery">
+                    <figure class="gallery-item">
+                        <div style="background:linear-gradient(145deg,#2B2680,#4C3FD6);border-radius:16px;overflow:hidden;border:2px solid var(--line);min-height:240px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;color:#fff;">
+                            <div style="font-size:3.5rem;margin-bottom:12px;">📊</div>
+                            <div style="font-size:1rem;font-weight:600;opacity:0.9;">ERP Dashboard</div>
+                            <div style="font-size:0.8rem;opacity:0.5;margin-top:4px;">Upload landscape image (640×420px)</div>
+                        </div>
+                        <figcaption><h3>ERP Dashboard</h3><p>Modules, staff roles &amp; reports</p></figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <div style="background:linear-gradient(145deg,#3730A9,#6D5EF5);border-radius:16px;overflow:hidden;border:2px solid var(--line);min-height:240px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;color:#fff;">
+                            <div style="font-size:3.5rem;margin-bottom:12px;">📋</div>
+                            <div style="font-size:1rem;font-weight:600;opacity:0.9;">CRM Pipeline</div>
+                            <div style="font-size:0.8rem;opacity:0.5;margin-top:4px;">Upload landscape image (640×420px)</div>
+                        </div>
+                        <figcaption><h3>CRM Pipeline</h3><p>Leads, follow-ups &amp; donors</p></figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <div style="background:linear-gradient(145deg,#1A7A5A,#1FA37D);border-radius:16px;overflow:hidden;border:2px solid var(--line);min-height:240px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;color:#fff;">
+                            <div style="font-size:3.5rem;margin-bottom:12px;">🧾</div>
+                            <div style="font-size:1rem;font-weight:600;opacity:0.9;">POS Billing</div>
+                            <div style="font-size:0.8rem;opacity:0.5;margin-top:4px;">Upload landscape image (640×420px)</div>
+                        </div>
+                        <figcaption><h3>POS Billing</h3><p>Counter checkout &amp; tickets</p></figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <div style="background:linear-gradient(145deg,#1A4B7A,#3A7BD5);border-radius:16px;overflow:hidden;border:2px solid var(--line);min-height:240px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;color:#fff;">
+                            <div style="font-size:3.5rem;margin-bottom:12px;">🌐</div>
+                            <div style="font-size:1rem;font-weight:600;opacity:0.9;">Website Build</div>
+                            <div style="font-size:0.8rem;opacity:0.5;margin-top:4px;">Upload landscape image (640×420px)</div>
+                        </div>
+                        <figcaption><h3>Website Build</h3><p>WordPress &amp; HTML delivery</p></figcaption>
                     </figure>
                 </div>
-                <!-- College Panel -->
-                <div class="tab-panel" id="panel-college" role="tabpanel">
-                    <div class="tab-panel-copy">
-                        <h3>College ERP</h3>
-                        <p>Everything a school system needs, scaled up — multiple departments, semester-wise fee structures, faculty scheduling and transcript generation.</p>
-                        <ul><li>Department &amp; semester structure</li><li>Faculty scheduling</li><li>Transcript &amp; GPA records</li><li>Multi-campus support</li></ul>
-                    </div>
-                    <figure class="tab-panel-shot">
-                        <img src="college-management-software.webp" alt="College ERP department and semester overview" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;border-radius:var(--radius-md);border:1px solid var(--line);">
-                        <figcaption>Sample department view</figcaption>
-                    </figure>
+                <div class="work-badges">
+                    <span>15+ modules per ERP build</span>
+                    <span>Role-based staff access</span>
+                    <span>Custom reporting</span>
+                    <span>Many web apps delivered</span>
                 </div>
-                <!-- Restaurant Panel -->
-                <div class="tab-panel" id="panel-restaurant" role="tabpanel">
-                    <div class="tab-panel-copy">
-                        <h3>Restaurant POS &amp; Management</h3>
-                        <p>Point-of-sale for the counter, kitchen order tickets, table management and stock control, with daily sales reports that close out in minutes.</p>
-                        <ul><li>POS &amp; billing</li><li>Kitchen order tickets</li><li>Table &amp; reservation view</li><li>Stock &amp; wastage tracking</li></ul>
-                    </div>
-                    <figure class="tab-panel-shot">
-                        <img src="restaurant-dashboard.webp" alt="Restaurant point-of-sale and daily sales dashboard" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;border-radius:var(--radius-md);border:1px solid var(--line);">
-                        <figcaption>Sample POS overview</figcaption>
-                    </figure>
-                </div>
-                <!-- Super Mart Panel -->
-                <div class="tab-panel" id="panel-mart" role="tabpanel">
-                    <div class="tab-panel-copy">
-                        <h3>Super Mart Software</h3>
-                        <p>Barcode-driven billing, multi-branch inventory, supplier ledgers and low-stock alerts, built for the pace of a busy checkout counter.</p>
-                        <ul><li>Barcode billing</li><li>Multi-branch inventory</li><li>Supplier ledgers</li><li>Low-stock alerts</li></ul>
-                    </div>
-                    <figure class="tab-panel-shot">
-                        <img src="supermart-software.webp" alt="Super mart multi-branch inventory dashboard" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;border-radius:var(--radius-md);border:1px solid var(--line);">
-                        <figcaption>Sample inventory overview</figcaption>
-                    </figure>
+                <div style="text-align:center;margin-top:48px;">
+                    <a href="projects.html" class="btn btn-primary" style="background:var(--indigo);color:#fff;box-shadow:0 6px 18px rgba(55,48,169,0.30);">View all projects →</a>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-        <!-- 7. WORK / PROJECT GALLERY - IMAGE PLACEHOLDERS -->
-<section class="section work" id="work">
-    <div class="wrap">
-        <div class="section-head">
-            <h2>Not our first system</h2>
-            <p>We've built ERP and CRM software across NGOs, schools, colleges, restaurants and super marts, plus a long list of WordPress and HTML web applications on the side. Every build starts the same way — with a demo you can click through.</p>
-        </div>
-        <div class="gallery">
-            <figure class="gallery-item">
-                <div style="background:linear-gradient(145deg,#2B2680,#4C3FD6);border-radius:16px;overflow:hidden;border:2px solid var(--line);min-height:240px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;color:#fff;">
-                    <div style="font-size:3.5rem;margin-bottom:12px;">📊</div>
-                    <div style="font-size:1rem;font-weight:600;opacity:0.9;">ERP Dashboard</div>
-                    <div style="font-size:0.8rem;opacity:0.5;margin-top:4px;">Upload landscape image (640×420px)</div>
-                </div>
-                <figcaption><h3>ERP Dashboard</h3><p>Modules, staff roles &amp; reports</p></figcaption>
-            </figure>
-            <figure class="gallery-item">
-                <div style="background:linear-gradient(145deg,#3730A9,#6D5EF5);border-radius:16px;overflow:hidden;border:2px solid var(--line);min-height:240px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;color:#fff;">
-                    <div style="font-size:3.5rem;margin-bottom:12px;">📋</div>
-                    <div style="font-size:1rem;font-weight:600;opacity:0.9;">CRM Pipeline</div>
-                    <div style="font-size:0.8rem;opacity:0.5;margin-top:4px;">Upload landscape image (640×420px)</div>
-                </div>
-                <figcaption><h3>CRM Pipeline</h3><p>Leads, follow-ups &amp; donors</p></figcaption>
-            </figure>
-            <figure class="gallery-item">
-                <div style="background:linear-gradient(145deg,#1A7A5A,#1FA37D);border-radius:16px;overflow:hidden;border:2px solid var(--line);min-height:240px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;color:#fff;">
-                    <div style="font-size:3.5rem;margin-bottom:12px;">🧾</div>
-                    <div style="font-size:1rem;font-weight:600;opacity:0.9;">POS Billing</div>
-                    <div style="font-size:0.8rem;opacity:0.5;margin-top:4px;">Upload landscape image (640×420px)</div>
-                </div>
-                <figcaption><h3>POS Billing</h3><p>Counter checkout &amp; tickets</p></figcaption>
-            </figure>
-            <figure class="gallery-item">
-                <div style="background:linear-gradient(145deg,#1A4B7A,#3A7BD5);border-radius:16px;overflow:hidden;border:2px solid var(--line);min-height:240px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;color:#fff;">
-                    <div style="font-size:3.5rem;margin-bottom:12px;">🌐</div>
-                    <div style="font-size:1rem;font-weight:600;opacity:0.9;">Website Build</div>
-                    <div style="font-size:0.8rem;opacity:0.5;margin-top:4px;">Upload landscape image (640×420px)</div>
-                </div>
-                <figcaption><h3>Website Build</h3><p>WordPress &amp; HTML delivery</p></figcaption>
-            </figure>
-        </div>
-        <div class="work-badges">
-            <span>15+ modules per ERP build</span>
-            <span>Role-based staff access</span>
-            <span>Custom reporting</span>
-            <span>Many web apps delivered</span>
-        </div>
-        <div style="text-align:center;margin-top:48px;">
-            <a href="projects.html" class="btn btn-primary" style="background:var(--indigo);color:#fff;box-shadow:0 6px 18px rgba(55,48,169,0.30);">View all projects →</a>
-        </div>
-    </div>
-</section>
+        </section>
 
         <!-- CTA SECTION -->
         <section class="section demo-promise" style="padding:70px 0;">
             <div class="wrap demo-inner" style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:24px;">
                 <h2 style="color:#fff;font-size:clamp(1.8rem, 3vw, 2.4rem);">Have a project in mind?</h2>
                 <p style="color:rgba(255,255,255,0.82);font-size:1.05rem;max-width:540px;">Let's talk about what you need. We'll build a working demo so you can test it before you decide.</p>
-                <a href="index#contact" class="btn btn-primary" style="background:var(--amber);color:var(--indigo-deep);box-shadow:0 6px 18px rgba(255,182,72,0.35);">Start your project</a>
+                <a href="index.html#contact" class="btn btn-primary" style="background:var(--amber);color:var(--indigo-deep);box-shadow:0 6px 18px rgba(255,182,72,0.35);">Start your project</a>
             </div>
         </section>
 
