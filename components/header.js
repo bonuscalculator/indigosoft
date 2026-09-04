@@ -11,7 +11,7 @@
         <!-- Logo with image -->
         <a href="/" class="brand">
           <!-- Option 1: Using an image file (recommended) -->
-          <img src="logo.svg" alt="Indigo Software" class="brand-logo" />
+          <img src="logo.png" alt="Indigo Software" class="brand-logo" />
           <!-- Option 2: Using inline SVG (uncomment below and comment out above) -->
           <!--
           <svg class="brand-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:34px;height:34px;">
