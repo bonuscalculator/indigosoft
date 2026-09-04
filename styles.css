@@ -1170,43 +1170,79 @@ p{margin:0;}
 }
 /* ============ MOBILE NAVIGATION HEIGHT ADJUSTMENTS ============ */
 @media (max-width: 760px) {
-  /* Make the header the container for absolute positioning */
   .site-header {
-    position: relative; 
+    position: sticky;
+    top: 8px;
+    z-index: 1000;
   }
 
   .main-nav {
-    position: absolute; 
-    top: 100%; /* Anchor directly below header */
-    left: 0; 
-    right: 0; 
+    position: absolute;
+    top: calc(100% + 8px); /* Hangs directly beneath the header pill */
+    left: 0;
+    right: 0;
     width: 100%;
-    max-height: 0; /* Hide height when closed */
+    
+    /* Reveal transition using opacity & transform instead of height clipping */
     opacity: 0;
     visibility: hidden;
-    overflow: hidden;
-    transform: none; /* Remove horizontal slide */
-    transition: max-height 0.35s ease, opacity 0.25s ease, visibility 0.25s ease;
-    background: var(--bg); 
-    border-radius: 16px;
-    box-shadow: 0 12px 30px rgba(27,27,47,0.15);
+    transform: translateY(-10px);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+    
+    background: var(--bg);
+    border-radius: 20px;
     border: 1px solid var(--line);
-    padding: 0 20px;
-    margin-top: 8px;
+    box-shadow: 0 16px 40px rgba(27, 27, 47, 0.18);
+    
+    /* Layout & height fixes */
+    padding: 16px 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
   }
 
-  /* Open state smoothly expands vertically */
-  .main-nav.is-open { 
-    max-height: 480px; /* Expands smoothly downwards */
+  /* Open State */
+  .main-nav.is-open {
     opacity: 1;
     visibility: visible;
-    padding: 16px 20px 24px;
-    overflow-y: auto;
+    transform: translateY(0);
+  }
+
+  /* Menu Items Height & Spacing */
+  .main-nav a {
+    width: 100%;
+    padding: 16px 12px; /* Generous height per menu link */
+    border-bottom: 1px solid var(--line);
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--ink);
+    display: block;
+    border-radius: 8px;
+  }
+
+  .main-nav a:last-child {
+    border-bottom: none;
+  }
+
+  .main-nav .nav-cta {
+    margin-top: 14px;
+    text-align: center;
+    background: var(--indigo);
+    color: #fff !important;
+    padding: 16px 24px;
+    border-radius: 999px;
+    font-weight: 600;
   }
 }
 
 @media (max-width: 480px) {
-  .main-nav.is-open {
-    max-height: 420px;
+  .main-nav {
+    top: calc(100% + 6px);
+    padding: 12px 16px 20px;
+  }
+
+  .main-nav a {
+    padding: 14px 10px;
+    font-size: 1rem;
   }
 }
