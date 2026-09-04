@@ -8,18 +8,18 @@
   const HEADER_HTML = `
     <header class="site-header" id="siteHeader">
       <div class="wrap header-inner">
-        <a href="#top" class="brand">
+        <a href="/" class="brand">
           <span class="brand-mark">I</span>
           <span class="brand-name">Indigo<em>Software</em></span>
         </a>
         <nav class="main-nav" id="mainNav">
-          <a href="#services">Services</a>
-          <a href="#industries">Industries</a>
-          <a href="#process">Process</a>
-          <a href="#stack">Tech Stack</a>
-          <a href="#work">Work</a>
-          <a href="#faq">FAQ</a>
-          <a href="#contact" class="nav-cta">Get a Demo</a>
+          <a href="/#services">Services</a>
+          <a href="/#industries">Industries</a>
+          <a href="/projects">Projects</a>
+          <a href="/#stack">Tech Stack</a>
+          <a href="/#work">Work</a>
+          <a href="/#faq">FAQ</a>
+          <a href="/contact" class="nav-cta">Get a Demo</a>
         </nav>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
           <span></span><span></span><span></span>
