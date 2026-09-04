@@ -5,7 +5,7 @@
  * only needs to happen in this file.
  */
 (function () {
-  const CONTACT_EMAIL = 'waqas.pccp@gmail.com';
+  const CONTACT_EMAIL = 'hello@indigosoftware.online';
   const CONTACT_PHONE_DISPLAY = '0340-2324446';
   const CONTACT_PHONE_TEL = '+923402324446';
   const YEAR = new Date().getFullYear();
@@ -19,11 +19,11 @@
           <p>Custom ERP &amp; CRM development, plus WordPress &amp; HTML websites.</p>
         </div>
         <nav class="footer-nav">
-          <a href="#services">Services</a>
-          <a href="#industries">Industries</a>
-          <a href="#process">Process</a>
-          <a href="#faq">FAQ</a>
-          <a href="#contact">Contact</a>
+          <a href="/#services">Services</a>
+          <a href="/#industries">Industries</a>
+          <a href="/projects">Projects</a>
+          <a href="/#faq">FAQ</a>
+          <a href="/contact">Contact</a>
         </nav>
         <div class="footer-contact">
           <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>
