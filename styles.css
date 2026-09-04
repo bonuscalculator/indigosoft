@@ -1174,7 +1174,7 @@ p{margin:0;}
     top: 70px;
     left: 16px;
     right: 16px;
-    bottom: 10px;  /* ← Changed from 20px to 10px */
+    bottom: 30px;  /* ← Changed from 20px to 10px */
     background: var(--bg);
     flex-direction: column;
     align-items: stretch;
