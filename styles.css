@@ -1171,10 +1171,10 @@ p{margin:0;}
 @media (max-width: 760px) {
   .main-nav {
     position: fixed;
-    top: 72px;
+    top: 70px;      /* ← REDUCE THIS (was 72px) */
     left: 16px;
     right: 16px;
-    bottom: 16px; /* Changed from 20px to 16px */
+    bottom: 10px; /* Changed from 20px to 16px */
     background: var(--bg);
     flex-direction: column;
     align-items: stretch;
