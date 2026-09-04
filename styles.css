@@ -1086,3 +1086,85 @@ p{margin:0;}
     font-size:clamp(1.4rem, 5vw, 1.8rem);
   }
 }
+/* ============ HEADER LOGO STYLES ============ */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.brand-logo {
+  width: 34px;
+  height: 34px;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* If using SVG inline instead of image */
+.brand-logo-inline {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: var(--indigo);
+  color: var(--amber);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.brand-name {
+  font-family: var(--serif);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.brand-name em {
+  font-style: normal;
+  color: var(--indigo);
+}
+
+/* Brand mark (fallback if no image) */
+.brand-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: var(--indigo);
+  color: var(--amber);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* ============ RESPONSIVE LOGO ============ */
+@media (max-width: 760px) {
+  .brand-logo {
+    width: 28px;
+    height: 28px;
+  }
+  .brand-name {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-logo {
+    width: 24px;
+    height: 24px;
+  }
+  .brand-name {
+    font-size: 0.85rem;
+  }
+}
