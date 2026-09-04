@@ -66,52 +66,31 @@
             </div>
         </section>
 
-        <!-- 4. INDUSTRIES (interactive tabs) - MOBILE COMPATIBLE -->
+      <!-- 4. INDUSTRIES (interactive tabs) - MOBILE COMPATIBLE -->
 <section class="section industries" id="industries">
     <div class="wrap">
         <div class="section-head">
-            <h2>One system, shaped five different ways</h2>
+            <h2>One system, shaped four different ways</h2>
             <p>Tap an industry to see what the software actually handles.</p>
         </div>
         <div class="tabs" id="industryTabs">
             <!-- Tab buttons - horizontally scrollable on mobile -->
             <div class="tab-buttons" role="tablist" style="overflow-x:auto;overflow-y:hidden;white-space:nowrap;display:flex;flex-wrap:nowrap;gap:8px;padding:4px 0 12px;scrollbar-width:thin;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;">
-                <button class="tab-btn is-active" role="tab" aria-selected="true" data-tab="ngo" style="flex:0 0 auto;">NGOs</button>
-                <button class="tab-btn" role="tab" aria-selected="false" data-tab="school" style="flex:0 0 auto;">Schools</button>
+                <button class="tab-btn is-active" role="tab" aria-selected="true" data-tab="school" style="flex:0 0 auto;">Schools</button>
                 <button class="tab-btn" role="tab" aria-selected="false" data-tab="college" style="flex:0 0 auto;">Colleges</button>
                 <button class="tab-btn" role="tab" aria-selected="false" data-tab="restaurant" style="flex:0 0 auto;">Restaurants</button>
                 <button class="tab-btn" role="tab" aria-selected="false" data-tab="mart" style="flex:0 0 auto;">Super Marts</button>
             </div>
             <div class="tab-panels">
-                <!-- NGO Panel -->
-                <div class="tab-panel is-active" id="panel-ngo" role="tabpanel">
-                    <div class="tab-panel-copy">
-                        <h3>NGO &amp; Charity Management</h3>
-                        <p>Track donations and donors, manage project budgets, log field expenditure and generate the reports your funders ask for — all reconciled against a proper chart of accounts.</p>
-                        <ul><li>Donation &amp; donor tracking</li><li>Expenditure &amp; approvals</li><li>Beneficiary records</li><li>Funder-ready reports</li></ul>
-                    </div>
-                    <figure class="tab-panel-shot">
-                        <div style="background:linear-gradient(145deg,#e8e5f0,#d5d0e6);border-radius:var(--radius-md);border:2px dashed var(--line);padding:60px 20px;text-align:center;min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;">
-                            <div style="font-size:3rem;margin-bottom:12px;">📊</div>
-                            <div style="font-size:0.85rem;color:var(--ink-soft);font-weight:500;">NGO Dashboard</div>
-                            <div style="font-size:0.75rem;color:var(--ink-soft);opacity:0.6;margin-top:4px;">Upload landscape image (1200×630px)</div>
-                        </div>
-                        <figcaption>Sample donor dashboard</figcaption>
-                    </figure>
-                </div>
-                <!-- School Panel -->
-                <div class="tab-panel" id="panel-school" role="tabpanel">
+                <!-- School Panel (Active by default) -->
+                <div class="tab-panel is-active" id="panel-school" role="tabpanel">
                     <div class="tab-panel-copy">
                         <h3>School Management</h3>
                         <p>Admissions, fee vouchers, attendance, exam results and staff payroll in one place, so front-desk staff and management are always looking at the same numbers.</p>
                         <ul><li>Admissions &amp; enrollment</li><li>Fee vouchers &amp; ledgers</li><li>Attendance &amp; result cards</li><li>Staff payroll</li></ul>
                     </div>
                     <figure class="tab-panel-shot">
-                        <div style="background:linear-gradient(145deg,#e8f0f0,#d5e6e6);border-radius:var(--radius-md);border:2px dashed var(--line);padding:60px 20px;text-align:center;min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;">
-                            <div style="font-size:3rem;margin-bottom:12px;">🏫</div>
-                            <div style="font-size:0.85rem;color:var(--ink-soft);font-weight:500;">School Dashboard</div>
-                            <div style="font-size:0.75rem;color:var(--ink-soft);opacity:0.6;margin-top:4px;">Upload landscape image (1200×630px)</div>
-                        </div>
+                        <img src="images/industry-school.jpg" alt="School fee and attendance management dashboard" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;border-radius:var(--radius-md);border:1px solid var(--line);">
                         <figcaption>Sample admissions overview</figcaption>
                     </figure>
                 </div>
@@ -123,11 +102,7 @@
                         <ul><li>Department &amp; semester structure</li><li>Faculty scheduling</li><li>Transcript &amp; GPA records</li><li>Multi-campus support</li></ul>
                     </div>
                     <figure class="tab-panel-shot">
-                        <div style="background:linear-gradient(145deg,#e8ecf5,#d5dcee);border-radius:var(--radius-md);border:2px dashed var(--line);padding:60px 20px;text-align:center;min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;">
-                            <div style="font-size:3rem;margin-bottom:12px;">🎓</div>
-                            <div style="font-size:0.85rem;color:var(--ink-soft);font-weight:500;">College ERP Dashboard</div>
-                            <div style="font-size:0.75rem;color:var(--ink-soft);opacity:0.6;margin-top:4px;">Upload landscape image (1200×630px)</div>
-                        </div>
+                        <img src="images/industry-college.jpg" alt="College ERP department and semester overview" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;border-radius:var(--radius-md);border:1px solid var(--line);">
                         <figcaption>Sample department view</figcaption>
                     </figure>
                 </div>
@@ -139,11 +114,7 @@
                         <ul><li>POS &amp; billing</li><li>Kitchen order tickets</li><li>Table &amp; reservation view</li><li>Stock &amp; wastage tracking</li></ul>
                     </div>
                     <figure class="tab-panel-shot">
-                        <div style="background:linear-gradient(145deg,#f5ece8,#eed5d0);border-radius:var(--radius-md);border:2px dashed var(--line);padding:60px 20px;text-align:center;min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;">
-                            <div style="font-size:3rem;margin-bottom:12px;">🍽️</div>
-                            <div style="font-size:0.85rem;color:var(--ink-soft);font-weight:500;">Restaurant POS Dashboard</div>
-                            <div style="font-size:0.75rem;color:var(--ink-soft);opacity:0.6;margin-top:4px;">Upload landscape image (1200×630px)</div>
-                        </div>
+                        <img src="images/industry-restaurant.jpg" alt="Restaurant point-of-sale and daily sales dashboard" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;border-radius:var(--radius-md);border:1px solid var(--line);">
                         <figcaption>Sample POS overview</figcaption>
                     </figure>
                 </div>
@@ -155,11 +126,7 @@
                         <ul><li>Barcode billing</li><li>Multi-branch inventory</li><li>Supplier ledgers</li><li>Low-stock alerts</li></ul>
                     </div>
                     <figure class="tab-panel-shot">
-                        <div style="background:linear-gradient(145deg,#f5f0e8,#eeddc5);border-radius:var(--radius-md);border:2px dashed var(--line);padding:60px 20px;text-align:center;min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;">
-                            <div style="font-size:3rem;margin-bottom:12px;">🛒</div>
-                            <div style="font-size:0.85rem;color:var(--ink-soft);font-weight:500;">Super Mart Dashboard</div>
-                            <div style="font-size:0.75rem;color:var(--ink-soft);opacity:0.6;margin-top:4px;">Upload landscape image (1200×630px)</div>
-                        </div>
+                        <img src="images/industry-mart.jpg" alt="Super mart multi-branch inventory dashboard" loading="lazy" width="640" height="420" style="width:100%;height:auto;display:block;border-radius:var(--radius-md);border:1px solid var(--line);">
                         <figcaption>Sample inventory overview</figcaption>
                     </figure>
                 </div>
