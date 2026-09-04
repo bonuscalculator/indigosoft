@@ -1170,74 +1170,43 @@ p{margin:0;}
 }
 /* ============ MOBILE NAVIGATION HEIGHT ADJUSTMENTS ============ */
 @media (max-width: 760px) {
+  /* Make the header the container for absolute positioning */
+  .site-header {
+    position: relative; 
+  }
+
   .main-nav {
-    position: fixed; 
-    top: 72px; 
-    left: 16px; 
-    right: 16px; 
-    bottom: auto; /* Allow height to be determined explicitly */
-    max-height: calc(100vh - 100px); /* Prevents overflow offscreen while expanding */
+    position: absolute; 
+    top: 100%; /* Anchor directly below header */
+    left: 0; 
+    right: 0; 
+    width: 100%;
+    max-height: 0; /* Hide height when closed */
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transform: none; /* Remove horizontal slide */
+    transition: max-height 0.35s ease, opacity 0.25s ease, visibility 0.25s ease;
     background: var(--bg); 
-    flex-direction: column; 
-    align-items: stretch; 
-    gap: 0;
-    padding: 24px; 
-    transform: translateX(120%); 
-    transition: transform .35s cubic-bezier(.22,1,.36,1);
-    overflow-y: auto;
-    border-radius: 24px;
-    box-shadow: 0 20px 60px rgba(27,27,47,0.20);
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(27,27,47,0.15);
     border: 1px solid var(--line);
-    justify-content: flex-start;
+    padding: 0 20px;
+    margin-top: 8px;
   }
 
+  /* Open state smoothly expands vertically */
   .main-nav.is-open { 
-    transform: translateX(0); 
-  }
-
-  .main-nav a { 
-    width: 100%; 
-    padding: 18px 16px; /* Increased vertical padding to make each menu row taller */
-    border-bottom: 1px solid var(--line);
-    font-size: 1.05rem;
-    font-weight: 500;
-    border-radius: 8px;
-    transition: background 0.2s ease;
-  }
-
-  .main-nav a:last-child { 
-    border-bottom: none; 
-  }
-
-  .main-nav .nav-cta { 
-    margin-top: 16px; 
-    text-align: center;
-    background: var(--indigo);
-    color: #fff !important;
-    padding: 16px 24px;
-    border-radius: 999px;
-    font-weight: 600;
-    border-bottom: none !important;
+    max-height: 480px; /* Expands smoothly downwards */
+    opacity: 1;
+    visibility: visible;
+    padding: 16px 20px 24px;
+    overflow-y: auto;
   }
 }
 
 @media (max-width: 480px) {
-  .main-nav {
-    top: 62px;
-    left: 10px;
-    right: 10px;
-    max-height: calc(100vh - 80px);
-    padding: 20px;
-    border-radius: 20px;
-  }
-
-  .main-nav a {
-    padding: 16px 12px; /* Extra height for smaller screens */
-    font-size: 1rem;
-  }
-
-  .main-nav .nav-cta {
-    padding: 14px 20px;
-    font-size: 0.95rem;
+  .main-nav.is-open {
+    max-height: 420px;
   }
 }
